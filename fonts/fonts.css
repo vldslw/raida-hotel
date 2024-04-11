@@ -2,7 +2,6 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
   src: url(./Montserrat-Regular.ttf) format("truetype");
 }
 
@@ -10,7 +9,6 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
   src: url(./Montserrat-Medium.ttf) format("truetype");
 }
 
@@ -18,7 +16,6 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
   src: url(./Montserrat-SemiBold.ttf) format("truetype");
 }
 
@@ -26,6 +23,5 @@
   font-family: "Philosopher";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
   src: url(./Philosopher-Bold.ttf) format("truetype");
 }
