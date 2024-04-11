@@ -1,0 +1,65 @@
+@import url(./normalize.css);
+@import url(../fonts/fonts.css);
+
+:root {
+  --dark-green: #465b4a;
+  --light-beige: #ede9df;
+  --main-green: #457460;
+  --white: #fdfcfb;
+  --sec-green: #449477;
+  --red-error: #b50202;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: var(--dark-green);
+  background-color: var(--light-beige);
+}
+
+a {
+  color: var(--dark-green);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+h3 {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
