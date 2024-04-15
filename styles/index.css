@@ -180,3 +180,28 @@ h3 {
   height: 8px;
   margin: 6px 0 6px 16px;
 }
+
+.cards {
+  background-image: url("../assets/icons/wavesbg-block-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 174px 64px 180px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.cards__article {
+  grid-column: span 4;
+  color: var(--light-beige);
+  border-right: 1px solid var(--light-beige);
+  border-bottom: 1px solid var(--light-beige);
+  padding: 40px 32px;
+}
+
+.cards__article:nth-child(3n) {
+  border-right: none;
+}
+
+.cards__article:nth-child(n + 4) {
+  border-bottom: none;
+}
