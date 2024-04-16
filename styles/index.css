@@ -400,3 +400,25 @@ h3 {
 .footer__link {
   margin-right: 20px;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 140px;
+  padding: 0 0 180px;
+}
+
+.gallery__title {
+  grid-column: 3 / span 8;
+  text-align: center;
+  margin: 0;
+}
+
+.gallery__slider {
+  grid-column: span 12;
+}
+
+.gallery__img {
+  width: 100%;
+}

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Document</title>
   </head>
@@ -196,7 +200,47 @@
           </article>
         </section>
         <section class="reviews"></section>
-        <section class="gallery"></section>
+        <section class="gallery">
+          <h2 class="gallery__title">Галерея</h2>
+          <div
+            id="gallerySlider"
+            class="gallery__slider splide"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    src="./assets/images/gallery-image-1.png"
+                    alt="Room photo"
+                    class="gallery__img"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./assets/images/gallery-image-2.png"
+                    alt="Room photo"
+                    class="gallery__img"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./assets/images/gallery-image-3.png"
+                    alt="Room photo"
+                    class="gallery__img"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./assets/images/header-background-home.jpeg"
+                    alt="Room photo"
+                    class="gallery__img"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <section class="contact">
           <h2 class="contact__title">
             Если у вас остались вопросы — свяжитесь с нами
@@ -282,4 +326,7 @@
       </footer>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="main.js"></script>
 </html>
