@@ -205,3 +205,35 @@ h3 {
 .cards__article:nth-child(n + 4) {
   border-bottom: none;
 }
+
+.rooms {
+  padding: 180px 64px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 140px;
+}
+
+.rooms__title {
+  grid-column: 3 / span 8;
+  text-align: center;
+}
+
+.rooms__description {
+  grid-column: span 6;
+}
+
+.rooms__img-large {
+  width: 100%;
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+.rooms__img-small {
+  width: 100%;
+  grid-column: 3 / span 4;
+}
+
+.rooms__text {
+  margin-bottom: 60px;
+}
