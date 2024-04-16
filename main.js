@@ -1,4 +1,5 @@
 var gallerySlider = new Splide("#gallerySlider", {
+  height: "240px",
   type: "loop",
   drag: "free",
   focus: "center",

@@ -117,6 +117,7 @@ h3 {
   padding: 12px 16px;
   border: solid 1px var(--white);
   border-radius: 8px;
+  white-space: nowrap;
 }
 
 .header__contacts-list {
@@ -154,9 +155,6 @@ h3 {
   background-color: var(--white);
 }
 
-.main {
-}
-
 .info {
   padding: 180px 64px;
   display: grid;
@@ -191,6 +189,14 @@ h3 {
   grid-template-columns: repeat(12, 1fr);
 }
 
+.cards__title {
+  margin: 0;
+}
+
+.cards__text {
+  margin: 25px 0 0;
+}
+
 .cards__article {
   grid-column: span 4;
   color: var(--light-beige);
@@ -218,6 +224,7 @@ h3 {
 .rooms__title {
   grid-column: 3 / span 8;
   text-align: center;
+  margin: 0;
 }
 
 .rooms__description {
@@ -236,7 +243,7 @@ h3 {
 }
 
 .rooms__text {
-  margin-bottom: 60px;
+  margin: 0 0 60px;
 }
 
 .services {
@@ -244,12 +251,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
-  row-gap: 140px;
 }
 
 .services__title {
   grid-column: 3 / span 8;
   text-align: center;
+  margin: 0 0 140px;
 }
 
 .service {
@@ -258,6 +265,15 @@ h3 {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
   row-gap: 140px;
+  margin: 0 0 120px;
+}
+
+.service:last-of-type {
+  margin: 0;
+}
+
+.service__title {
+  margin: 0 0 60px;
 }
 
 .service__img {
@@ -300,12 +316,17 @@ h3 {
 .contact__title {
   grid-column: 3 / span 8;
   text-align: center;
+  margin: 0 0 140px;
 }
 .contact__address {
   grid-column: 2 / span 5;
 }
 .contact__contacts {
   grid-column: 9 / span 3;
+}
+
+.contact__link {
+  margin: 0 20px 0 0;
 }
 .contact__link-button {
   grid-column: span 12;
@@ -321,10 +342,12 @@ h3 {
 }
 .contact__text {
   margin: 0 0 20px;
+  font-size: 20px;
 }
 
 .contact__address-text {
   margin: 0 0 76px;
+  font-size: 20px;
 }
 
 .welcome {
@@ -353,7 +376,7 @@ h3 {
   background-image: url("../assets/icons/wavesbg-footer.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 164px 208px 112px 64px;
+  padding: 164px 64px 112px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
@@ -363,26 +386,25 @@ h3 {
   margin: 10px 0 0;
 }
 
-.footer > :nth-child(1) {
-  grid-column: span 4;
+.footer__block_type_contacts {
+  grid-column: span 5;
   grid-row: span 2;
 }
 
-.footer > :nth-child(2) {
+.footer__block_type_links {
   grid-column: 6 / span 2;
   grid-row: span 2;
 }
-
-.footer > :nth-child(3) {
+.footer__block_type_documents {
   grid-column: 9 / span 4;
   grid-row: 2;
   margin: 0;
 }
 
-.footer > :nth-child(4) {
+.footer__block_type_social {
   grid-column: 9 / span 4;
   grid-row: 1;
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 .footer__navlink {
@@ -407,7 +429,7 @@ h3 {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
   row-gap: 140px;
-  padding: 0 0 180px;
+  padding: 180px 0 180px;
 }
 
 .gallery__title {
@@ -418,6 +440,11 @@ h3 {
 
 .gallery__slider {
   grid-column: span 12;
+}
+
+.gallery__slide {
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .gallery__img {
@@ -437,9 +464,15 @@ h3 {
 }
 
 .reviews__title {
-  grid-column: 3 / span 8;
+  grid-column: 4 / span 6;
   text-align: center;
   margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  max-height: 270px;
+  overflow: hidden;
 }
 
 .reviews__slider {
@@ -447,12 +480,12 @@ h3 {
 }
 
 .reviews__card {
+  box-sizing: border-box;
   padding: 40px 32px;
   border: 1px solid var(--light-beige);
   border-radius: 8px;
-}
-
-.reviews__text {
+  height: 420px;
+  overflow: hidden;
 }
 
 .reviews__card-title {
@@ -466,13 +499,15 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  top: -44px;
+  top: -55px;
 }
 
 .reviews__arrow_prev {
   background-image: url("../assets/icons/arrow-beige-left.svg");
+  left: 0em;
 }
 
 .reviews__arrow_next {
   background-image: url("../assets/icons/arrow-beige-right.svg");
+  right: 0em;
 }
