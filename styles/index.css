@@ -325,3 +325,25 @@ h3 {
 .contact__address-text {
   margin: 0 0 76px;
 }
+
+.welcome {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 120px;
+  padding: 0 64px 120px;
+}
+
+.welcome__title {
+  grid-column: 3 / span 8;
+  grid-row: 2;
+  text-align: center;
+  margin: 0;
+}
+
+.welcome__img {
+  grid-row: 1;
+  grid-column: span 12;
+  width: 100%;
+  border-radius: 20px;
+}
