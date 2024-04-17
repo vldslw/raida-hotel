@@ -431,7 +431,7 @@ h3 {
 .reviews__text {
   margin: 0;
   max-height: 270px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .reviews__slider {
@@ -443,8 +443,9 @@ h3 {
   padding: 40px 32px;
   border: 1px solid var(--light-beige);
   border-radius: 8px;
-  height: 420px;
+  height: 100%;
   overflow: hidden;
+  background-color: var(--main-green);
 }
 
 .reviews__card-title {
@@ -696,6 +697,29 @@ h3 {
 
   .reviews__text {
     max-height: 180px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .reviews__card:after {
+    margin: 0 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: 34px;
+    height: 54px;
+    background: linear-gradient(
+      to bottom,
+      rgba(69, 116, 96, 0.3) 0%,
+      rgba(69, 116, 96, 1) 100%
+    );
+    content: "Читать полностью";
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
   }
 
   .reviews__slider {
@@ -703,8 +727,7 @@ h3 {
   }
 
   .reviews__card {
-    padding: 32px 20px;
-    height: 342px;
+    padding: 32px 20px 66px;
   }
 
   .reviews__arrow {

@@ -24,8 +24,10 @@ var gallerySlider = new Splide("#gallerySlider", {
 
 var reviewsSlider = new Splide("#reviewsSlider", {
   perPage: 3,
+  height: "420px",
   breakpoints: {
     768: {
+      height: "342px",
       perPage: 1,
     },
   },
