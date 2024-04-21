@@ -258,6 +258,14 @@ h3 {
   border-radius: 8px;
 }
 
+.room-details__card {
+  border-bottom: 1px solid var(--main-green);
+}
+
+.room-details__card:last-of-type {
+  border-bottom: none;
+}
+
 .room-details__open-button {
   cursor: pointer;
   background: transparent;
@@ -281,6 +289,10 @@ h3 {
 }
 
 .room-details__lower {
+  display: none;
+}
+
+.room-details__lower_open {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
@@ -1010,7 +1022,6 @@ h3 {
     grid-column: span 3;
     border-radius: 20px;
   }
-
   .room-details__upper {
     grid-template-columns: repeat(3, 1fr);
     padding: 48px 20px;
@@ -1021,12 +1032,17 @@ h3 {
   }
 
   .room-details__lower {
+    display: none;
+  }
+
+  .room-details__lower_open {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 20px 20px 48px;
   }
 
   .room-details__slider-box {
+    display: block;
     grid-column: span 3;
     margin: 0 0 60px;
   }
