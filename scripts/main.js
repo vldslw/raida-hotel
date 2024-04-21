@@ -47,9 +47,9 @@ cards.forEach((card) => {
   const button = card.querySelector(".room-details__open-button");
 
   button.addEventListener("click", function () {
+    button.classList.toggle("room-details__open-button_state_active");
     const lower = card.querySelector(".room-details__lower");
     lower.classList.toggle("room-details__lower_open");
-
     if (
       lower.classList.contains("room-details__lower_open") &&
       !roomSliderMain &&
@@ -95,5 +95,25 @@ cards.forEach((card) => {
 
       roomSliderMain.sync(roomSliderThumbnails);
     }
+  });
+});
+
+const buildingSelectButtons = document.querySelectorAll(
+  ".rooms__buildings-selector"
+);
+const roomDetailsSections = document.querySelectorAll(".room-details");
+
+buildingSelectButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    buildingSelectButtons.forEach((btn) => {
+      btn.classList.remove("rooms__buildings-selector_state_active");
+    });
+
+    button.classList.add("rooms__buildings-selector_state_active");
+
+    roomDetailsSections.forEach((section) => {
+      section.style.display = "none";
+    });
+    roomDetailsSections[index].style.display = "block";
   });
 });
