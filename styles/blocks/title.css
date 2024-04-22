@@ -1,0 +1,17 @@
+.title {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  margin: 0;
+  grid-column: 3 / span 8;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title {
+    grid-column: span 3;
+    font-size: 38px;
+    line-height: 44px;
+  }
+}

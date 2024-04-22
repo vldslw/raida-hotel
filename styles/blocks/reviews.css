@@ -1,0 +1,117 @@
+.reviews {
+  background-image: url("../../assets/icons/waves-bg-block2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 140px;
+  padding: 162px 64px 188px;
+  color: var(--light-beige);
+  box-sizing: border-box;
+}
+
+.reviews__title-wraper {
+  grid-column: 4 / span 6;
+}
+
+.reviews__text {
+  margin: 32px 0 0;
+  max-height: 270px;
+  overflow: scroll;
+}
+
+.reviews__slider {
+  grid-column: span 12;
+}
+
+.reviews__card {
+  box-sizing: border-box;
+  padding: 40px 32px;
+  border: 1px solid var(--light-beige);
+  border-radius: 8px;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--main-green);
+}
+
+.reviews__arrow {
+  width: 192px;
+  height: 20px;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: -55px;
+}
+
+.reviews__arrow_prev {
+  background-image: url("../../assets/icons/arrow-beige-left.svg");
+  left: 0;
+}
+
+.reviews__arrow_next {
+  background-image: url("../../assets/icons/arrow-beige-right.svg");
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 80px;
+    padding: 97px 0 114px;
+  }
+
+  .reviews__title-wraper {
+    grid-column: span 3;
+    padding: 0 18px;
+  }
+
+  .reviews__text {
+    max-height: 180px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .reviews__card:after {
+    margin: 0 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: 34px;
+    height: 54px;
+    background: linear-gradient(
+      to bottom,
+      rgba(69, 116, 96, 0.3) 0%,
+      rgba(69, 116, 96, 1) 100%
+    );
+    content: "Читать полностью";
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .reviews__slider {
+    grid-column: span 3;
+  }
+
+  .reviews__card {
+    padding: 32px 20px 66px;
+  }
+
+  .reviews__arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .reviews {
+    background-image: url("../../assets/icons/waves-block-2-mob.svg");
+    min-height: 760px;
+  }
+}

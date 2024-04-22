@@ -1,0 +1,16 @@
+.info {
+  padding: 180px 64px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 80px;
+}
+
+@media (max-width: 768px) {
+  .info {
+    padding: 140px 18px 100px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 60px;
+  }
+}

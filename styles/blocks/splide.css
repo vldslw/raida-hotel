@@ -1,0 +1,11 @@
+.splide__track--nav
+  > .splide__list
+  > .splide__slide.room-details__slide_type_thumbnails {
+  border: none;
+}
+
+.splide__track--nav
+  > .splide__list
+  > .splide__slide.room-details__slide_type_thumbnails.is-active {
+  border: none;
+}

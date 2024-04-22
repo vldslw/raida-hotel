@@ -1,0 +1,30 @@
+.welcome {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 120px;
+  padding: 0 64px 120px;
+}
+
+.welcome__img {
+  grid-row: 1;
+  grid-column: span 12;
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 100px;
+    padding: 0 0 100px;
+  }
+
+  .welcome__img {
+    grid-row: 1;
+    grid-column: span 3;
+    height: 350px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  --dark-green: #465b4a;
+  --light-beige: #ede9df;
+  --beige: #efdcc0;
+  --main-green: #457460;
+  --white: #fdfcfb;
+  --sec-green: #449477;
+  --red-error: #b50202;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,136 @@
+.header {
+  background-image: url("../../assets/images/header-background-home.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__upper {
+  padding: 24px 64px;
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+}
+
+.header__lower {
+  padding: 400px 64px 44px;
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+}
+
+.header__menu-button {
+  grid-column: span 4;
+  justify-self: start;
+  width: 60px;
+  height: 32px;
+  cursor: pointer;
+  margin: 6px 0;
+  background: transparent;
+  border: none;
+  background-image: url("../../assets/icons/menu-icon.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__logo {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  grid-column: span 4;
+  justify-self: center;
+  color: var(--white);
+  margin: 2px 0;
+}
+
+.header__link-button {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  grid-column: span 4;
+  justify-self: end;
+  color: var(--white);
+  padding: 12px 16px;
+  border: solid 1px var(--white);
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.header__contacts-list {
+  position: relative;
+  list-style-type: none;
+  padding: 170px 7px 10px;
+  margin: 0 0 0 7px;
+  grid-column: span 1;
+  justify-self: start;
+}
+
+.header__contact-link {
+  margin: 0;
+  text-decoration: none;
+}
+
+.header__contact-img {
+  display: block;
+}
+
+.header__contact {
+  margin: 0 0 20px;
+}
+
+.header__contact:last-of-type {
+  margin: 0;
+}
+
+.header__contacts-list::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  height: 140px;
+  width: 2px;
+  background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+
+  .header__upper {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 40px 18px;
+    row-gap: 32px;
+  }
+
+  .header__lower {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 300px 18px 40px;
+  }
+
+  .header__menu-button {
+    grid-column: span 1;
+  }
+
+  .header__logo {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+  }
+
+  .header__link-button {
+    grid-column: 2 / span 2;
+  }
+
+  .header__contacts-list {
+    margin: 0;
+  }
+}

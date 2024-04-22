@@ -29,6 +29,7 @@ var reviewsSlider = new Splide("#reviewsSlider", {
     768: {
       height: "342px",
       perPage: 1,
+      padding: { left: "18px", right: "56px" },
     },
   },
   gap: "32px",

@@ -1,0 +1,24 @@
+.link {
+  color: var(--dark-green);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  grid-column: 3 / span 8;
+  text-align: center;
+}
+
+.link__arrow {
+  vertical-align: middle;
+  width: 60px;
+  height: 8px;
+  margin: 6px 0 6px 16px;
+}
+
+@media (max-width: 768px) {
+  .link {
+    grid-column: span 3;
+    text-align: center;
+  }
+}
