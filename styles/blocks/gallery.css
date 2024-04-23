@@ -3,7 +3,7 @@
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
   row-gap: 140px;
-  padding: 180px 0 180px;
+  padding: 180px 0 0;
 }
 
 .gallery__slider {
@@ -24,7 +24,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 80px;
-    padding: 140px 0;
+    padding: 140px 0 0;
   }
 
   .gallery__slider {

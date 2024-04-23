@@ -1,0 +1,21 @@
+.rooms-upper {
+  padding: 140px 64px 0;
+}
+
+.rooms-upper__image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .rooms-upper {
+    padding: 100px 0 0;
+  }
+
+  .rooms-upper__image {
+    width: 100%;
+    min-height: 600px;
+    border-radius: 12px;
+  }
+}

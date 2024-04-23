@@ -4,6 +4,10 @@
   background-position: center;
 }
 
+.header_page_rooms {
+  background-image: url("../../assets/icons/wavesbg-header.svg");
+}
+
 .header__upper {
   padding: 24px 64px;
   grid-column: span 12;
@@ -18,12 +22,21 @@
   );
 }
 
+.header__upper_page_rooms {
+  background: transparent;
+}
+
 .header__lower {
   padding: 400px 64px 44px;
   grid-column: span 12;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
+}
+
+.header__lower_page_rooms {
+  padding: 60px 64px 160px;
+  color: var(--light-beige);
 }
 
 .header__menu-button {
@@ -109,6 +122,11 @@
     column-gap: 20px;
   }
 
+  .header_page_rooms {
+    background-image: url("../../assets/icons/waves-header-mob.svg");
+    background-position: bottom;
+  }
+
   .header__upper {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
@@ -120,6 +138,10 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     padding: 300px 18px 40px;
+  }
+
+  .header__lower_page_rooms {
+    padding: 120px 18px 248px;
   }
 
   .header__menu-button {
