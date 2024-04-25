@@ -12,6 +12,10 @@
   background-image: url("../../assets/images/about-header-background.jpeg");
 }
 
+.header_page_services {
+  background-image: url("../../assets/images/services-header-background.png");
+}
+
 .header__upper {
   padding: 24px 64px;
   grid-column: span 12;
@@ -44,6 +48,10 @@
 }
 
 .header__lower_page_about {
+  padding: 354px 64px;
+}
+
+.header__lower_page_services {
   padding: 354px 64px;
 }
 

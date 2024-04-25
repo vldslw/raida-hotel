@@ -11,7 +11,7 @@
 @import url(./blocks/cards.css);
 @import url(./blocks/rooms.css);
 @import url(./blocks/room-details.css);
-@import url(./blocks/services.css);
+@import url(./blocks/services-home.css);
 @import url(./blocks/service.css);
 @import url(./blocks/contact.css);
 @import url(./blocks/welcome.css);
@@ -22,3 +22,4 @@
 @import url(./blocks/rooms-upper.css);
 @import url(./blocks/rooms-building.css);
 @import url(./blocks/about.css);
+@import url(./blocks/services.css);

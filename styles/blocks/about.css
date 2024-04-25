@@ -1,4 +1,4 @@
-.about-section {
+.about__section {
   padding: 180px 64px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -6,7 +6,7 @@
   row-gap: 140px;
 }
 
-.about-section:last-of-type {
+.about__section:last-of-type {
   padding: 180px 64px 120px;
 }
 

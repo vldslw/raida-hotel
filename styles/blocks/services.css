@@ -1,14 +1,109 @@
 .services {
-  padding: 0 64px 180px;
+}
+
+.services__section {
+  padding: 180px 64px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
+  row-gap: 80px;
 }
 
-@media (max-width: 768px) {
-  .services {
-    padding: 0 18px 140px;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-  }
+.services__title-side-right {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  margin: 0;
+  grid-column: 8 / span 5;
+  text-align: center;
+}
+
+.services__title-side-left {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  margin: 0;
+  grid-column: 1 / span 5;
+  text-align: center;
+}
+
+.services__section:last-of-type {
+  padding: 180px 64px 120px;
+}
+
+.services__img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.services__text {
+  margin: 0;
+}
+
+.services__six-col-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1 / span 6;
+}
+
+.services__six-col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 7 / span 6;
+}
+
+.services__six-col-left-two-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1 / span 6;
+  grid-row: span 2;
+}
+
+.services__five-col-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1 / span 5;
+}
+
+.services__five-col-left-two-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1 / span 5;
+  grid-row: span 2;
+}
+
+.services__five-col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 8 / span 5;
+}
+
+.services__five-col-right-two-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 8 / span 5;
+  grid-row: span 2;
+}
+
+.services__four-col-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 4 / span 4;
+}
+
+.services__four-col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 7 / span 4;
 }
