@@ -8,6 +8,10 @@
   background-image: url("../../assets/icons/wavesbg-header.svg");
 }
 
+.header_page_about {
+  background-image: url("../../assets/images/about-header-background.jpeg");
+}
+
 .header__upper {
   padding: 24px 64px;
   grid-column: span 12;
@@ -22,7 +26,7 @@
   );
 }
 
-.header__upper_page_rooms {
+.header__upper_transparent {
   background: transparent;
 }
 
@@ -37,6 +41,10 @@
 .header__lower_page_rooms {
   padding: 60px 64px 160px;
   color: var(--light-beige);
+}
+
+.header__lower_page_about {
+  padding: 354px 64px;
 }
 
 .header__menu-button {

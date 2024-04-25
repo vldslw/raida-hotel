@@ -1,0 +1,145 @@
+.about-section {
+  padding: 180px 64px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 140px;
+}
+
+.about-section:last-of-type {
+  padding: 180px 64px 120px;
+}
+
+.about__img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about__text {
+  margin: 0;
+}
+
+.about__list {
+  list-style-type: none;
+  padding-inline-start: 12px;
+}
+
+.about__item {
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.about__item::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("../../assets/icons/marker.svg");
+  background-size: cover;
+}
+
+.about__item:last-of-type {
+  margin: 0;
+}
+
+.about__iframe {
+  border: 0;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.about__six-col-left {
+  display: flex;
+  align-items: center;
+  grid-column: 1 / span 6;
+}
+
+.about__six-col-right {
+  display: flex;
+  align-items: center;
+  grid-column: 7 / span 6;
+}
+
+.about__five-col-left {
+  display: flex;
+  align-items: center;
+  grid-column: 1 / span 5;
+}
+
+.about__five-col-right {
+  display: flex;
+  align-items: center;
+  grid-column: 8 / span 5;
+}
+
+.about__four-col-left {
+  display: flex;
+  align-items: center;
+  grid-column: 2 / span 4;
+}
+
+.about__four-col-right {
+  display: flex;
+  align-items: center;
+  grid-column: 8 / span 4;
+}
+
+.about__twelve-col {
+  display: flex;
+  align-items: center;
+  grid-column: span 12;
+}
+
+.about__eight-col {
+  display: flex;
+  align-items: center;
+  grid-column: 3 / span 8;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 140px 18px 0;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 60px;
+  }
+
+  .about-section:last-of-type {
+    padding: 140px 0 120px;
+  }
+
+  .about__six-col-left {
+    grid-column: span 3;
+  }
+
+  .about__six-col-right {
+    grid-column: span 3;
+  }
+
+  .about__five-col-left {
+    grid-column: span 3;
+  }
+
+  .about__five-col-right {
+    grid-column: span 3;
+  }
+
+  .about__four-col-left {
+    grid-column: span 3;
+  }
+
+  .about__four-col-right {
+    grid-column: span 3;
+  }
+
+  .about__twelve-col {
+    grid-column: span 3;
+  }
+
+  .about__eight-col {
+    grid-column: span 3;
+  }
+}
