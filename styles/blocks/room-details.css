@@ -107,6 +107,7 @@
   margin: 0;
   grid-column: span 1;
   white-space: nowrap;
+  font-weight: 600;
 }
 
 .rooms-details__list {
