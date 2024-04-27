@@ -10,7 +10,7 @@
     <div class="page">
       <header class="header header_page_services">
         <div class="header__upper header__upper_transparent">
-          <button class="header__menu-button"></button>
+          <button data-menu-target="#menu" class="header__menu-button"></button>
           <h1 class="header__logo">Raida</h1>
           <a href="/" class="header__link-button">Выбрать номер</a>
         </div>
@@ -338,14 +338,24 @@
           <p class="footer__text">
             Абхазия, г. Гагра. пр. им. В.Ардзинба(Нартаа) 49-А
           </p>
-          <p class="footer__text">+7 (840) 234-14-00</p>
-          <p class="footer__text">rayda-ray@mail.ru</p>
+          <p class="footer__text">
+            <a class="footer__contact-link" href="tel:+78402341400"
+              >+7 (840) 234-14-00</a
+            >
+          </p>
+          <p class="footer__text">
+            <a class="footer__contact-link" href="mailto:rayda-ray@mail.ru"
+              >rayda-ray@mail.ru</a
+            >
+          </p>
         </div>
         <div class="footer__block footer__block_type_links">
-          <a href="/" class="footer__navlink">Об отеле</a>
-          <a href="/" class="footer__navlink">Номера и цены</a>
-          <a href="/" class="footer__navlink">Услуги</a>
-          <a href="/" class="footer__navlink">Забронировать номер</a>
+          <a href="/about.html" class="footer__navlink">Об отеле</a>
+          <a href="/rooms.html" class="footer__navlink">Номера и цены</a>
+          <a href="/services.html" class="footer__navlink">Услуги</a>
+          <a href="/booking.html" class="footer__navlink"
+            >Забронировать номер</a
+          >
         </div>
         <div class="footer__block footer__block_type_documents">
           <a href="/" class="footer__navlink">Политика конфиденциальности</a>
@@ -369,6 +379,68 @@
           </a>
         </div>
       </footer>
+      <div id="menu" class="menu">
+        <div class="menu__header">
+          <button data-close-button class="menu__close-button"></button>
+          <h1 class="menu__logo">Raida</h1>
+        </div>
+        <div class="menu__sidebar">
+          <h1 class="menu__sidebar-logo">Raida</h1>
+          <div class="menu__contacts">
+            <p class="menu__text">
+              Абхазия, г. Гагра. пр. им. В.Ардзинба(Нартаа) 49-А
+            </p>
+            <p class="menu__text">
+              <a class="menu__contact-link" href="tel:+78402341400"
+                >+7 (840) 234-14-00</a
+              >
+            </p>
+            <p class="menu__text">
+              <a class="menu__contact-link" href="mailto:rayda-ray@mail.ru"
+                >rayda-ray@mail.ru</a
+              >
+            </p>
+            <p class="menu__text">
+              <a href="/" class="menu__social-link">
+                <img
+                  src="./assets/icons/whatsapp-icon-beige.svg"
+                  alt="WhatsApp"
+                  class="menu__icon"
+                />
+              </a>
+              <a href="/" class="menu__social-link">
+                <img
+                  src="./assets/icons/telegram-icon-beige.svg"
+                  alt="Telegram"
+                  class="menu__icon"
+                />
+              </a>
+            </p>
+            <p class="menu__text">Связаться с нами</p>
+          </div>
+        </div>
+        <div class="menu__body">
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="/about.html" class="menu__link">Об отеле</a>
+              </li>
+              <li class="menu__item">
+                <a href="/rooms.html" class="menu__link">Номера и цены</a>
+              </li>
+              <li class="menu__item">
+                <a href="/services.html" class="menu__link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="/booking.html" class="menu__link"
+                  >Забронировать номер</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
   </body>
+  <script src="./scripts/menu.js"></script>
 </html>

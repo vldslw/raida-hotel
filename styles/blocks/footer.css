@@ -48,6 +48,11 @@
   margin: 0 0 24px;
 }
 
+.footer__contact-link {
+  text-decoration: none;
+  color: var(--light-beige);
+}
+
 .footer__link {
   margin-right: 20px;
   text-decoration: none;
