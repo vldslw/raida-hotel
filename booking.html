@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Забронировать номер</title>
+  </head>
+  <body class="body">
+    <div class="page">
+      <header class="header header_page_rooms">
+        <div class="header__upper header__upper_transparent">
+          <button data-menu-target="#menu" class="header__menu-button"></button>
+          <h1 class="header__logo">Raida</h1>
+          <a href="/" class="header__link-button">Выбрать номер</a>
+        </div>
+        <div class="header__lower header__lower_page_rooms">
+          <h2 class="title">Забронировать номер</h2>
+        </div>
+      </header>
+      <main class="main">
+        <section class="booking">
+          <form id="booking" name="booking" action="" class="booking__form">
+            <p class="booking__text">
+              Для предварительного бронирования номера заполните форму ниже.
+              Ожидайте звонка или сообщения от менеджера в течение 12 часов с
+              момента отправки заявки. Также вы всегда можете связаться с нами в
+              <a href="/" class="booking__link booking__link_bold">Telegram</a>,
+              <a href="/" class="booking__link booking__link_bold">WhatsApp</a>
+              или по почте
+              <a
+                class="booking__link booking__link_bold"
+                href="mailto:rayda-ray@mail.ru"
+                >rayda-ray@mail.ru</a
+              >.
+            </p>
+            <div class="booking__section">
+              <div class="booking__subsection">
+                <div class="booking__block booking__block_half">
+                  <label for="check-in" class="booking__label">Заезд</label>
+                  <input
+                    type="date"
+                    class="booking__input"
+                    name="checkIn"
+                    id="check-in"
+                  />
+                </div>
+                <div class="booking__block booking__block_half">
+                  <label for="check-out" class="booking__label">Выезд</label>
+                  <input
+                    type="date"
+                    class="booking__input"
+                    name="checkOut"
+                    id="check-out"
+                  />
+                </div>
+                <span class="booking__dates"
+                  >2 ночи (18 апреля, чт — 20 апреля, сб)</span
+                >
+              </div>
+              <div class="booking__subsection">
+                <div class="booking__block booking__block_half">
+                  <label for="guests" class="booking__label">Гости</label>
+                  <input
+                    type="text"
+                    class="booking__input"
+                    name="guests"
+                    id="guests"
+                  />
+                </div>
+                <div class="booking__block booking__block_half">
+                  <label for="promo" class="booking__label">Промокод</label>
+                  <input
+                    type="text"
+                    class="booking__input"
+                    name="promo"
+                    id="promo"
+                  />
+                </div>
+              </div>
+              <div class="booking__block booking__block_full">
+                <label for="category" class="booking__label"
+                  >Категория номера</label
+                >
+                <select
+                  class="booking__input booking__input_select"
+                  name="category"
+                  id="category"
+                >
+                  <option value="undecided">Не определился</option>
+                  <optgroup label="Корпус 1">
+                    <option value="building1-two-beds-without-balcony">
+                      Двухместный без балкона
+                    </option>
+                    <option value="building1-two-beds-with-balcony">
+                      Двухместный с балконом
+                    </option>
+                    <option value="building1-two-beds-with-balcony-sea">
+                      Двухместный с балконом (вид на море)
+                    </option>
+                    <option value="building1-two-beds-with-balcony-mountains">
+                      Двухместный с балконом (вид на горы)
+                    </option>
+                  </optgroup>
+                  <optgroup label="Корпус 2">
+                    <option
+                      value="building2-two-beds-without-balcony-mountains"
+                    >
+                      Двухместный без балкона (вид на горы)
+                    </option>
+                    <option value="building2-two-beds-without-balcony-sea">
+                      Двухместный без балкона (вид на море)
+                    </option>
+                    <option value="building2-two-beds-with-balcony-mountains">
+                      Двухместный с балконом (вид на горы)
+                    </option>
+                    <option value="building2-two-beds-with-balcony-sea">
+                      Двухместный с балконом (вид на море)
+                    </option>
+                    <option value="building2-two-rooms-with-balcony-mountains">
+                      Двухкомнатный с балконом (вид на горы)
+                    </option>
+                    <option value="building2-two-rooms-with-balcony-sea">
+                      Двухкомнатный с балконом (вид на море)
+                    </option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="booking__section">
+              <h2 class="booking__title">Контактные данные</h2>
+              <div class="booking__block booking__block_full">
+                <label for="name" class="booking__label"
+                  >Как к вам обращаться*</label
+                >
+                <input
+                  type="text"
+                  class="booking__input"
+                  name="name"
+                  id="name"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="booking__subsection">
+                <div class="booking__block booking__block_half">
+                  <label for="phone" class="booking__label"
+                    >Номер телефона*</label
+                  >
+                  <input
+                    type="tel"
+                    class="booking__input"
+                    name="phone"
+                    id="phone"
+                    placeholder="+7 (999) 212-85-06"
+                  />
+                </div>
+                <div class="booking__block booking__block_half">
+                  <label for="email" class="booking__label"
+                    >Электронная почта*</label
+                  >
+                  <input
+                    type="email"
+                    class="booking__input"
+                    name="email"
+                    id="email"
+                    placeholder="example@mail.ru"
+                  />
+                  <span id="emailError" class="booking__error"></span>
+                </div>
+              </div>
+
+              <div class="booking__block booking__block_full">
+                <label for="method" class="booking__label"
+                  >Предпочтительный способ связи</label
+                >
+                <select
+                  class="booking__input booking__input_select"
+                  name="method"
+                  id="method"
+                >
+                  <option value="phone">Телефон</option>
+                  <option value="telegram">Telegram</option>
+                  <option value="whatsapp">WhatsApp</option>
+                  <option value="email">Электронная почта</option>
+                </select>
+              </div>
+              <div class="booking__block booking__block_full">
+                <label for="comment" class="booking__label">Комментарий</label>
+                <textarea
+                  type="text"
+                  class="booking__input"
+                  name="comment"
+                  id="comment"
+                  placeholder="Дополнительная информация, которую вы хотите нам сообщить"
+                  rows="4"
+                ></textarea>
+              </div>
+              <p class="booking__text">
+                Отправляя заявку, вы даете согласие на
+                <a href="/" class="booking__link"
+                  >обработку персональных данных</a
+                >
+              </p>
+              <button class="booking__button">Отправить заявку</button>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__block footer__block_type_contacts">
+          <p class="footer__text">Отель «Райда»</p>
+          <p class="footer__text">
+            Абхазия, г. Гагра. пр. им. В.Ардзинба(Нартаа) 49-А
+          </p>
+          <p class="footer__text">
+            <a class="footer__contact-link" href="tel:+78402341400"
+              >+7 (840) 234-14-00</a
+            >
+          </p>
+          <p class="footer__text">
+            <a class="footer__contact-link" href="mailto:rayda-ray@mail.ru"
+              >rayda-ray@mail.ru</a
+            >
+          </p>
+        </div>
+        <div class="footer__block footer__block_type_links">
+          <a href="/about.html" class="footer__navlink">Об отеле</a>
+          <a href="/rooms.html" class="footer__navlink">Номера и цены</a>
+          <a href="/services.html" class="footer__navlink">Услуги</a>
+          <a href="/booking.html" class="footer__navlink"
+            >Забронировать номер</a
+          >
+        </div>
+        <div class="footer__block footer__block_type_documents">
+          <a href="/" class="footer__navlink">Политика конфиденциальности</a>
+          <a href="/" class="footer__navlink">Договор оферты</a>
+          <p class="footer__text">© Отель «Райда, 2024</p>
+        </div>
+        <div class="footer__block footer__block_type_social">
+          <a href="/" class="footer__link">
+            <img
+              src="./assets/icons/whatsapp-icon-beige.svg"
+              alt="WhatsApp"
+              class="contact__icon"
+            />
+          </a>
+          <a href="/" class="footer__link">
+            <img
+              src="./assets/icons/telegram-icon-beige.svg"
+              alt="Telegram"
+              class="contact__icon"
+            />
+          </a>
+        </div>
+      </footer>
+      <div id="menu" class="menu">
+        <div class="menu__header">
+          <button data-close-button class="menu__close-button"></button>
+          <h1 class="menu__logo">Raida</h1>
+        </div>
+        <div class="menu__sidebar">
+          <h1 class="menu__sidebar-logo">Raida</h1>
+          <div class="menu__contacts">
+            <p class="menu__text">
+              Абхазия, г. Гагра. пр. им. В.Ардзинба(Нартаа) 49-А
+            </p>
+            <p class="menu__text">
+              <a class="menu__contact-link" href="tel:+78402341400"
+                >+7 (840) 234-14-00</a
+              >
+            </p>
+            <p class="menu__text">
+              <a class="menu__contact-link" href="mailto:rayda-ray@mail.ru"
+                >rayda-ray@mail.ru</a
+              >
+            </p>
+            <p class="menu__text">
+              <a href="/" class="menu__social-link">
+                <img
+                  src="./assets/icons/whatsapp-icon-beige.svg"
+                  alt="WhatsApp"
+                  class="menu__icon"
+                />
+              </a>
+              <a href="/" class="menu__social-link">
+                <img
+                  src="./assets/icons/telegram-icon-beige.svg"
+                  alt="Telegram"
+                  class="menu__icon"
+                />
+              </a>
+            </p>
+            <p class="menu__text">Связаться с нами</p>
+          </div>
+        </div>
+        <div class="menu__body">
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="/about.html" class="menu__link">Об отеле</a>
+              </li>
+              <li class="menu__item">
+                <a href="/rooms.html" class="menu__link">Номера и цены</a>
+              </li>
+              <li class="menu__item">
+                <a href="/services.html" class="menu__link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="/booking.html" class="menu__link"
+                  >Забронировать номер</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="./scripts/roomSlider.js"></script>
+  <script src="./scripts/menu.js"></script>
+  <script src="./scripts/form.js"></script>
+</html>

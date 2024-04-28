@@ -1,0 +1,93 @@
+.booking {
+  padding: 100px 288px 136px;
+}
+
+.booking__section {
+  padding: 60px 112px 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+}
+
+.booking__subsection {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 32px;
+  row-gap: 20px;
+}
+
+.booking__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__block_half {
+  grid-column: span 3;
+}
+
+.booking__block_full {
+  grid-column: span 6;
+}
+
+.booking__title {
+  grid-column: span 6;
+}
+
+.booking__dates {
+  grid-column: span 6;
+  font-weight: 600;
+}
+
+.booking__text {
+  grid-column: span 6;
+}
+
+.booking__input {
+  border: 1px solid var(--main-green);
+  border-radius: 12px;
+  background-color: transparent;
+  padding: 17px 16px;
+}
+
+.booking__input:focus {
+  background-color: rgba(249, 244, 233, 1);
+  outline: none;
+}
+
+.booking__input_select {
+  appearance: none;
+  background: url(../../assets/icons/select.svg) no-repeat 98% center;
+}
+
+.booking__label {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+  text-align: left;
+  margin: 0 0 16px;
+}
+
+.booking__link {
+  color: var(--sec-green);
+  text-decoration: none;
+}
+
+.booking__link_bold {
+  font-weight: 600;
+}
+
+.booking__title {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0;
+  text-align: center;
+}
+
+.booking__text {
+  margin: 0;
+}
