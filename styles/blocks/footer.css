@@ -58,6 +58,12 @@
   text-decoration: none;
 }
 
+@media (min-width: 1441px) {
+  .footer {
+    background-image: url("../../assets/icons/Waves-bg-footer-1800px-480px.svg");
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 118px 18px 60px;

@@ -6,6 +6,12 @@
 
 .header_page_rooms {
   background-image: url("../../assets/icons/wavesbg-header.svg");
+  background-position: bottom;
+}
+
+.header_page_booking {
+  background-image: url("../../assets/icons/wavesbg-header.svg");
+  background-position: bottom;
 }
 
 .header_page_about {
@@ -132,8 +138,18 @@
   background-color: var(--white);
 }
 
+@media (min-width: 1441px) {
+  .header_page_rooms {
+    background-image: url("../../assets/icons/Waves-bg-header-1800px-480px.svg");
+  }
+
+  .header_page_booking {
+    background-image: url("../../assets/icons/Waves-bg-header-1800px-480px.svg");
+  }
+}
+
 @media (max-width: 768px) {
-  .header {
+  .header_page_rooms {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
   }
