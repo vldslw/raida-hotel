@@ -138,7 +138,7 @@
                 </select>
                 <div
                   class="custom-select"
-                  id="custom-select"
+                  id="custom-select-category"
                   data-target="category"
                 >
                   <div class="custom-select__upper">
@@ -275,7 +275,6 @@
                   <span id="emailError" class="booking__error"></span>
                 </div>
               </div>
-
               <div class="booking__block booking__block_full">
                 <label for="method" class="booking__label"
                   >Предпочтительный способ связи</label
@@ -284,12 +283,37 @@
                   class="booking__input booking__input_select"
                   name="method"
                   id="method"
+                  style="display: none"
                 >
                   <option value="phone">Телефон</option>
                   <option value="telegram">Telegram</option>
                   <option value="whatsapp">WhatsApp</option>
                   <option value="email">Электронная почта</option>
                 </select>
+                <div
+                  class="custom-select"
+                  id="custom-select-method"
+                  data-target="method"
+                >
+                  <div class="custom-select__header">
+                    <span class="custom-select__current">Телефон</span>
+                    <div class="custom-select__icon"></div>
+                  </div>
+                  <div class="custom-select__body">
+                    <div class="custom-select__option" data-value="phone">
+                      Телефон
+                    </div>
+                    <div class="custom-select__option" data-value="telegram">
+                      Telegram
+                    </div>
+                    <div class="custom-select__option" data-value="whatsapp">
+                      WhatsApp
+                    </div>
+                    <div class="custom-select__option" data-value="email">
+                      Электронная почта
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="booking__block booking__block_full">
                 <label for="comment" class="booking__label">Комментарий</label>

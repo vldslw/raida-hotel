@@ -1,4 +1,6 @@
 let select = function () {
+  document.addEventListener("click", selectChoose);
+
   function selectChoose(event) {
     let select = event.target.closest(".custom-select");
 
@@ -7,24 +9,23 @@ let select = function () {
     }
 
     let text = event.target.innerText;
-
     let currentText = select.querySelector(".custom-select__current");
+
     let actualSelectId = select.getAttribute("data-target");
     let actualSelect = document.getElementById(actualSelectId);
 
     let optgroup = event.target.closest(".custom-select__optgroup");
 
-    if (!optgroup) {
-      return;
+    if (optgroup) {
+      let groupName = optgroup.querySelector(
+        ".custom-select__optgroup-name"
+      ).innerText;
+      currentText.innerText = groupName + " — " + text;
+    } else {
+      currentText.innerText = text;
     }
 
-    let groupName = optgroup.querySelector(
-      ".custom-select__optgroup-name"
-    ).innerText;
-
-    currentText.innerText = groupName + " — " + text;
     select.classList.remove("custom-select_active");
-
     let icon = select.querySelector(".custom-select__icon");
     icon.classList.remove("custom-select__icon_flipped");
 
@@ -45,8 +46,6 @@ let select = function () {
       icon.classList.toggle("custom-select__icon_flipped");
     }
   });
-
-  document.addEventListener("click", selectChoose);
 
   document.addEventListener("click", function (event) {
     let select = event.target.closest(".custom-select");
