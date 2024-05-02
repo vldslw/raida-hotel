@@ -1,0 +1,185 @@
+.flatpickr-calendar {
+  background-color: var(--light-beige);
+  border-radius: 20px;
+  width: 736px !important;
+  font-size: 16px;
+}
+
+.flatpickr-calendar::before {
+  display: none;
+}
+
+.flatpickr-calendar::after {
+  display: none;
+}
+
+.flatpickr-innerContainer {
+  padding: 22px 40px 40px;
+}
+
+.flatpickr-months {
+  padding: 40px 40px 0;
+}
+
+.dayContainer:first-of-type {
+  padding-right: 20px;
+}
+.dayContainer:last-of-type {
+  padding-left: 20px;
+}
+
+.flatpickr-weekdaycontainer:first-of-type {
+  padding-right: 20px;
+}
+
+.flatpickr-weekdaycontainer:last-of-type {
+  padding-left: 20px;
+}
+
+.flatpickr-day {
+  color: var(--dark-green);
+  width: 44px;
+  height: 44px;
+  max-width: 44px;
+  line-height: 44px;
+}
+
+.flatpickr-day:hover {
+  background: var(--light-beige);
+  border-color: var(--main-green);
+  color: var(--dark-green);
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay {
+  background: var(--main-green);
+  border-color: var(--main-green);
+  color: var(--light-beige);
+}
+
+.flatpickr-day.flatpickr-disabled {
+  color: rgba(70, 91, 74, 0.4);
+}
+
+.flatpickr-calendar .calendar-title {
+  text-align: center;
+  font-family: "Philosopher";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  padding: 40px 40px 0;
+  background-color: var(--light-beige);
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+  height: 18px;
+  width: 18px;
+  padding: 0px 0px;
+  top: 40px;
+}
+
+.dayContainer {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+.flatpickr-current-month span.cur-month {
+  font-weight: 500;
+}
+
+.flatpickr-current-month input.cur-year {
+  font-weight: 500;
+}
+
+.flatpickr-current-month {
+  padding: 0;
+  font-size: 20px;
+}
+
+.flatpickr-prev-month {
+  margin-left: 40px;
+}
+
+.flatpickr-next-month {
+  margin-right: 40px;
+}
+
+.flatpickr-rContainer {
+  width: 100%;
+}
+
+.flatpickr-days {
+  width: 100% !important;
+}
+
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+  visibility: hidden;
+}
+
+.flatpickr-next-month::before {
+  content: url(../../assets/icons/arrow-round-right-small.svg);
+  visibility: visible;
+  display: block;
+}
+
+.flatpickr-prev-month::before {
+  content: url(../../assets/icons/arrow-round-left-small.svg);
+  visibility: visible;
+  display: block;
+}
+
+@media (max-width: 898px) {
+  .flatpickr-calendar {
+    width: 100% !important;
+    position: fixed;
+    top: auto !important;
+    bottom: 0;
+  }
+  .flatpickr-innerContainer {
+    justify-content: center;
+  }
+
+  .flatpickr-rContainer {
+    max-width: 308px;
+  }
+
+  .dayContainer:first-of-type {
+    padding-right: 0;
+  }
+  .dayContainer:last-of-type {
+    padding-left: 0;
+  }
+
+  .flatpickr-weekdaycontainer:first-of-type {
+    padding-right: 0;
+  }
+
+  .flatpickr-weekdaycontainer:last-of-type {
+    padding-left: 0;
+  }
+
+  .flatpickr-months .flatpickr-prev-month,
+  .flatpickr-months .flatpickr-next-month {
+    top: 115px;
+  }
+}
