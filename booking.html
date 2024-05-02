@@ -86,7 +86,7 @@
                   />
                 </div>
               </div>
-              <div class="booking__block booking__block_full">
+              <div class="booking__block booking__block_full" id="rooms">
                 <label for="category" class="booking__label"
                   >Категория номера</label
                 >
@@ -135,6 +135,87 @@
                     </option>
                   </optgroup>
                 </select>
+                <div class="custom-select">
+                  <div class="custom-select__header">
+                    <span class="custom-select__current"
+                      >Корпус 1 - Двухместный без балкона</span
+                    >
+                    <div class="custom-select__icon"></div>
+                  </div>
+
+                  <div class="custom-select__body">
+                    <div class="custom-select__option" data-value="undecided">
+                      Не определился
+                    </div>
+                    <div class="custom-select__optgroup">
+                      <p class="custom-select__optgroup-name">Корпус 1</p>
+                      <div
+                        class="custom-select__option"
+                        data-value="building1-two-beds-without-balcony"
+                      >
+                        Двухместный без балкона
+                      </div>
+                      <div
+                        class="custom-select__option"
+                        data-value="building1-two-beds-with-balcony"
+                      >
+                        Двухместный с балконом
+                      </div>
+                      <div
+                        class="custom-select__option"
+                        data-value="building1-two-beds-with-balcony-sea"
+                      >
+                        Двухместный с балконом (вид на море)
+                      </div>
+                      <div
+                        class="custom-select__option"
+                        data-value="building1-two-beds-with-balcony-mountains"
+                      >
+                        Двухместный с балконом (вид на горы)
+                      </div>
+                    </div>
+                    <div class="custom-select__optgroup">
+                      <p class="custom-select__optgroup-name">Корпус 2</p>
+                      <div
+                        class="custom-select__option"
+                        value="building2-two-beds-without-balcony-mountains"
+                      >
+                        Двухместный без балкона (вид на горы)
+                      </div>
+                      <div
+                        class="custom-select__option"
+                        value="building2-two-beds-without-balcony-sea"
+                      >
+                        Двухместный без балкона (вид на море)
+                      </div>
+                      <div
+                        class="custom-select__option"
+                        value="building2-two-beds-with-balcony-mountains"
+                      >
+                        Двухместный с балконом (вид на горы)
+                      </div>
+                      <div
+                        class="custom-select__option"
+                        value="building2-two-beds-with-balcony-sea"
+                      >
+                        Двухместный с балконом (вид на море)
+                      </div>
+                      <div
+                        class="custom-select__option"
+                        value="building2-two-rooms-with-balcony-mountains"
+                      >
+                        Двухкомнатный с балконом (вид на горы)
+                      </div>
+                      <div
+                        class="custom-select__option"
+                        value="building2-two-rooms-with-balcony-sea"
+                      >
+                        Двухкомнатный с балконом (вид на море)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- сделать тут кнопку для добавления дополнительного номера <div id="addSelect" class="booking__add-button">Добавить</div> -->
               </div>
             </div>
             <div class="booking__section">
@@ -335,4 +416,5 @@
   <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
   <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
   <script src="./scripts/datepicker.js"></script>
+  <script src="./scripts/customSelect.js"></script>
 </html>

@@ -112,6 +112,10 @@
   cursor: pointer;
 }
 
+#category {
+  display: none;
+}
+
 @media (max-width: 1375px) {
   .booking {
     padding: 100px 144px 136px;
