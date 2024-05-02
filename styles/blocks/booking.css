@@ -112,8 +112,22 @@
   cursor: pointer;
 }
 
-#category {
-  display: none;
+.booking__add-button {
+  align-self: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.booking__add-button-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.booking__add-button-text {
+  font-weight: 600;
 }
 
 @media (max-width: 1375px) {

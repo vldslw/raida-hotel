@@ -91,9 +91,10 @@
                   >Категория номера</label
                 >
                 <select
-                  class="booking__input booking__input_select"
+                  class="booking__input booking__input_select category-select"
                   name="category"
                   id="category"
+                  style="display: none"
                 >
                   <option class="booking__option" value="undecided">
                     Не определился
@@ -135,7 +136,15 @@
                     </option>
                   </optgroup>
                 </select>
-                <div class="custom-select">
+                <div
+                  class="custom-select"
+                  id="custom-select"
+                  data-target="category"
+                >
+                  <div class="custom-select__upper">
+                    <h3 class="custom-select__room-number">Номер 1</h3>
+                    <div class="custom-select__delete-button">Удалить</div>
+                  </div>
                   <div class="custom-select__header">
                     <span class="custom-select__current"
                       >Корпус 1 - Двухместный без балкона</span
@@ -215,7 +224,14 @@
                     </div>
                   </div>
                 </div>
-                <!-- сделать тут кнопку для добавления дополнительного номера <div id="addSelect" class="booking__add-button">Добавить</div> -->
+                <div id="addSelect" class="booking__add-button">
+                  <img
+                    src="./assets/icons/plus-button.svg"
+                    alt=""
+                    class="booking__add-button-img"
+                  />
+                  <span class="booking__add-button-text">Добавить номер</span>
+                </div>
               </div>
             </div>
             <div class="booking__section">
@@ -417,4 +433,5 @@
   <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
   <script src="./scripts/datepicker.js"></script>
   <script src="./scripts/customSelect.js"></script>
+  <script src="./scripts/addNewRoomSelect.js"></script>
 </html>

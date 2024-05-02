@@ -1,19 +1,22 @@
 let select = function () {
-  let selectHeader = document.querySelectorAll(".custom-select__header");
-  let selectOption = document.querySelectorAll(".custom-select__option");
+  function selectChoose(event) {
+    let select = event.target.closest(".custom-select");
 
-  function selectToggle() {
-    this.parentElement.classList.toggle("custom-select_active");
-  }
+    if (!select) {
+      return;
+    }
 
-  function selectChoose() {
-    let text = this.innerText;
-    let select = this.closest(".custom-select");
+    let text = event.target.innerText;
 
     let currentText = select.querySelector(".custom-select__current");
-    let actualSelect = document.getElementById("category");
+    let actualSelectId = select.getAttribute("data-target");
+    let actualSelect = document.getElementById(actualSelectId);
 
-    let optgroup = this.closest(".custom-select__optgroup");
+    let optgroup = event.target.closest(".custom-select__optgroup");
+
+    if (!optgroup) {
+      return;
+    }
 
     let groupName = optgroup.querySelector(
       ".custom-select__optgroup-name"
@@ -22,6 +25,9 @@ let select = function () {
     currentText.innerText = groupName + " — " + text;
     select.classList.remove("custom-select_active");
 
+    let icon = select.querySelector(".custom-select__icon");
+    icon.classList.remove("custom-select__icon_flipped");
+
     Array.from(actualSelect.options).forEach((option) => {
       if (option.text === text) {
         option.selected = true;
@@ -29,12 +35,31 @@ let select = function () {
     });
   }
 
-  selectHeader.forEach((item) => {
-    item.addEventListener("click", selectToggle);
+  document.addEventListener("click", function (event) {
+    let header = event.target.closest(".custom-select__header");
+    if (header) {
+      let select = header.closest(".custom-select");
+      select.classList.toggle("custom-select_active");
+
+      let icon = select.querySelector(".custom-select__icon");
+      icon.classList.toggle("custom-select__icon_flipped");
+    }
   });
 
-  selectOption.forEach((item) => {
-    item.addEventListener("click", selectChoose);
+  document.addEventListener("click", selectChoose);
+
+  document.addEventListener("click", function (event) {
+    let select = event.target.closest(".custom-select");
+
+    if (!select) {
+      let allSelects = document.querySelectorAll(".custom-select");
+      allSelects.forEach((select) => {
+        select.classList.remove("custom-select_active");
+
+        let icon = select.querySelector(".custom-select__icon");
+        icon.classList.remove("custom-select__icon_flipped");
+      });
+    }
   });
 };
 
