@@ -1,7 +1,7 @@
 let selectCount = 1;
 
 function updateDeleteButtons() {
-  let customSelects = document.querySelectorAll(".custom-select");
+  let customSelects = document.querySelectorAll(".custom-select_category");
   let deleteButtons = document.querySelectorAll(
     ".custom-select__delete-button"
   );

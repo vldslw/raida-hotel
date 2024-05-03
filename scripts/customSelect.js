@@ -2,6 +2,9 @@ let select = function () {
   document.addEventListener("click", selectChoose);
 
   function selectChoose(event) {
+    if (!event.target.classList.contains("custom-select__option")) {
+      return;
+    }
     let select = event.target.closest(".custom-select");
 
     if (!select) {
