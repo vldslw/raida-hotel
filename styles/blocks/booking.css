@@ -130,6 +130,14 @@
   font-weight: 600;
 }
 
+.booking__guests {
+  border: 1px solid var(--main-green);
+  border-radius: 12px;
+  background-color: transparent;
+  padding: 17px 16px;
+  margin: 0;
+}
+
 @media (max-width: 1375px) {
   .booking {
     padding: 100px 144px 136px;

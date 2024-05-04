@@ -69,12 +69,76 @@
               <div class="booking__subsection">
                 <div class="booking__block booking__block_half">
                   <label for="guests" class="booking__label">Гости</label>
-                  <input
-                    type="text"
-                    class="booking__input"
-                    name="guests"
-                    id="guests"
-                  />
+                  <p class="booking__guests">
+                    <span class="booking__guests-number_adults">0</span>
+                    взрослых,
+                    <span class="booking__guests-number_children">0</span>
+                    ребенок
+                  </p>
+                  <div class="guests-dropdown">
+                    <div class="guests-dropdown__item">
+                      <div class="guests-dropdown__text">
+                        <span class="guests-dropdown__text-upper"
+                          >Взрослые</span
+                        >
+                        <span class="guests-dropdown__text-lower"
+                          >(от 12 лет)</span
+                        >
+                      </div>
+                      <div class="guests-dropdown__buttons">
+                        <button
+                          type="button"
+                          class="guests-dropdown__button guests-dropdown__button_minus"
+                        >
+                          -
+                        </button>
+                        <span class="guests-dropdown__number-wraper">
+                          <input
+                            type="number"
+                            min="0"
+                            class="guests-dropdown__number"
+                            value="0"
+                            id="guests-adults"
+                          />
+                        </span>
+                        <button
+                          type="button"
+                          class="guests-dropdown__button guests-dropdown__button_plus"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                    <div class="guests-dropdown__item">
+                      <div class="guests-dropdown__text">
+                        <span class="guests-dropdown__text-upper">Дети</span>
+                        <span class="guests-dropdown__text-lower"
+                          >(до 12 лет)</span
+                        >
+                      </div>
+                      <div class="guests-dropdown__buttons">
+                        <button
+                          type="button"
+                          class="guests-dropdown__button guests-dropdown__button_minus"
+                        >
+                          -
+                        </button>
+                        <input
+                          type="number"
+                          min="0"
+                          class="guests-dropdown__number"
+                          value="0"
+                          id="guests-children"
+                        />
+                        <button
+                          type="button"
+                          class="guests-dropdown__button guests-dropdown__button_plus"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="booking__block booking__block_half">
                   <label for="promo" class="booking__label">Промокод</label>
@@ -458,4 +522,5 @@
   <script src="./scripts/datepicker.js"></script>
   <script src="./scripts/customSelect.js"></script>
   <script src="./scripts/addNewRoomSelect.js"></script>
+  <script src="./scripts/guestsDropdown.js"></script>
 </html>
