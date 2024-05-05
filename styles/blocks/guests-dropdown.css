@@ -64,6 +64,14 @@
   background-image: url(../../assets/icons/minus.svg);
 }
 
+.guests-dropdown__button_plus:active {
+  background-image: url(../../assets/icons/plus-green.svg);
+}
+
+.guests-dropdown__button_minus:active {
+  background-image: url(../../assets/icons/minus-green.svg);
+}
+
 .guests-dropdown__button_inactive {
   background-image: url(../../assets/icons/minus-disabled.svg);
 }
