@@ -1,3 +1,5 @@
+var overlay = document.querySelector(".booking__overlay");
+
 let select = function () {
   document.addEventListener("click", selectChoose);
 
@@ -10,6 +12,11 @@ let select = function () {
     if (!select) {
       return;
     }
+
+    select
+      .querySelectorAll(".custom-select__option")
+      .forEach((opt) => opt.classList.remove("custom-select__option_selected"));
+    event.target.classList.add("custom-select__option_selected");
 
     let text = event.target.innerText;
     let currentText = select.querySelector(".custom-select__current");
@@ -29,6 +36,14 @@ let select = function () {
     }
 
     select.classList.remove("custom-select_active");
+    overlay.style.display = "none";
+
+    let header = select.querySelector(".custom-select__header");
+    if (header) {
+      header.classList.remove("custom-select__header_active");
+      overlay.style.display = "none";
+    }
+
     let icon = select.querySelector(".custom-select__icon");
     icon.classList.remove("custom-select__icon_flipped");
 
@@ -45,8 +60,12 @@ let select = function () {
       let select = header.closest(".custom-select");
       select.classList.toggle("custom-select_active");
 
+      header.classList.toggle("custom-select__header_active");
+
       let icon = select.querySelector(".custom-select__icon");
       icon.classList.toggle("custom-select__icon_flipped");
+
+      overlay.style.display = "block";
     }
   });
 
@@ -58,9 +77,31 @@ let select = function () {
       allSelects.forEach((select) => {
         select.classList.remove("custom-select_active");
 
+        let header = select.querySelector(".custom-select__header");
+        if (header) {
+          header.classList.remove("custom-select__header_active");
+        }
+
         let icon = select.querySelector(".custom-select__icon");
         icon.classList.remove("custom-select__icon_flipped");
+
+        overlay.style.display = "none";
       });
+    } else {
+      let upper = event.target.closest(".custom-select__upper");
+      if (upper) {
+        select.classList.remove("custom-select_active");
+
+        let header = select.querySelector(".custom-select__header");
+        if (header) {
+          header.classList.remove("custom-select__header_active");
+        }
+
+        let icon = select.querySelector(".custom-select__icon");
+        icon.classList.remove("custom-select__icon_flipped");
+
+        overlay.style.display = "none";
+      }
     }
   });
 };

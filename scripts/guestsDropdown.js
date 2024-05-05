@@ -1,11 +1,46 @@
-function updateGuestsNumbers() {
-  let adultsNumber = document.querySelector("#guests-adults").value;
-  let childrenNumber = document.querySelector("#guests-children").value;
+var guestsOverlay = document.querySelector(".booking__guests-overlay");
 
-  document.querySelector(".booking__guests-number_adults").textContent =
-    adultsNumber;
-  document.querySelector(".booking__guests-number_children").textContent =
-    childrenNumber;
+function getWordForm(n, one, few, many) {
+  var lastDigit = n % 10;
+  var lastTwoDigits = n % 100;
+
+  if (lastDigit === 1 && lastTwoDigits !== 11) {
+    return one;
+  } else if (
+    lastDigit >= 2 &&
+    lastDigit <= 4 &&
+    (lastTwoDigits < 10 || lastTwoDigits >= 20)
+  ) {
+    return few;
+  } else {
+    return many;
+  }
+}
+
+function updateGuestsNumbers() {
+  let adultsNumber = parseInt(
+    document.querySelector("#guests-adults").value,
+    10
+  );
+  let childrenNumber = parseInt(
+    document.querySelector("#guests-children").value,
+    10
+  );
+
+  var adultsWord = getWordForm(
+    adultsNumber,
+    "взрослый",
+    "взрослых",
+    "взрослых"
+  );
+  var childrenWord = getWordForm(childrenNumber, "ребенок", "ребенка", "детей");
+
+  var guestsText = adultsNumber + " " + adultsWord;
+  if (childrenNumber > 0) {
+    guestsText += ", " + childrenNumber + " " + childrenWord;
+  }
+
+  document.querySelector(".booking__guests").textContent = guestsText;
 }
 
 document.querySelectorAll(".guests-dropdown__button").forEach((button) => {
@@ -30,14 +65,19 @@ document.querySelectorAll(".guests-dropdown__button").forEach((button) => {
 
 let dropdown = document.querySelector(".guests-dropdown");
 let bookingGuests = document.querySelector(".booking__guests");
+let bookingGuestsIcon = document.querySelector(".booking__guests-icon");
 
 bookingGuests.addEventListener("click", (event) => {
   event.stopPropagation();
   dropdown.classList.toggle("guests-dropdown_open");
+  bookingGuestsIcon.classList.toggle("booking__guests-icon_flipped");
+  guestsOverlay.style.display = "block";
 });
 
 document.addEventListener("click", (event) => {
   if (!dropdown.contains(event.target)) {
     dropdown.classList.remove("guests-dropdown_open");
+    bookingGuestsIcon.classList.remove("booking__guests-icon_flipped");
+    guestsOverlay.style.display = "none";
   }
 });

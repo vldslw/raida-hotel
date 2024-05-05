@@ -31,8 +31,11 @@
           <form id="booking" name="booking" action="" class="booking__form">
             <p class="booking__text">
               Для предварительного бронирования номера заполните форму ниже.
+              <br />
               Ожидайте звонка или сообщения от менеджера в течение 12 часов с
-              момента отправки заявки. Также вы всегда можете связаться с нами в
+              момента отправки заявки.
+              <br />
+              Также вы всегда можете связаться с нами в
               <a href="/" class="booking__link booking__link_bold">Telegram</a>,
               <a href="/" class="booking__link booking__link_bold">WhatsApp</a>
               или по почте
@@ -46,36 +49,40 @@
               <div class="booking__subsection">
                 <div class="booking__block booking__block_half">
                   <label for="check-in" class="booking__label">Заезд</label>
-                  <input
-                    type="date"
-                    class="booking__input"
-                    name="checkIn"
-                    id="check-in"
-                  />
+                  <div class="booking__input-container">
+                    <input
+                      type="date"
+                      class="booking__input"
+                      name="checkIn"
+                      id="check-in"
+                    />
+                    <span class="booking__calendar-icon"></span>
+                  </div>
                 </div>
                 <div class="booking__block booking__block_half">
                   <label for="check-out" class="booking__label">Выезд</label>
-                  <input
-                    type="date"
-                    class="booking__input"
-                    name="checkOut"
-                    id="check-out"
-                  />
+                  <div class="booking__input-container">
+                    <input
+                      type="date"
+                      class="booking__input"
+                      name="checkOut"
+                      id="check-out"
+                    />
+                    <span class="booking__calendar-icon"></span>
+                  </div>
                 </div>
-                <span class="booking__dates"
-                  >2 ночи (18 апреля, чт — 20 апреля, сб)</span
-                >
+                <span class="booking__dates"></span>
               </div>
               <div class="booking__subsection">
                 <div class="booking__block booking__block_half">
                   <label for="guests" class="booking__label">Гости</label>
-                  <p class="booking__guests">
-                    <span class="booking__guests-number_adults">0</span>
-                    взрослых,
-                    <span class="booking__guests-number_children">0</span>
-                    ребенок
-                  </p>
+                  <div class="booking__guests-wrapper">
+                    <p class="booking__guests">1 взрослый</p>
+                    <div class="booking__guests-icon"></div>
+                  </div>
+
                   <div class="guests-dropdown">
+                    <div class="guests-dropdown__header">Количество гостей</div>
                     <div class="guests-dropdown__item">
                       <div class="guests-dropdown__text">
                         <span class="guests-dropdown__text-upper"
@@ -89,11 +96,10 @@
                         <button
                           type="button"
                           class="guests-dropdown__button guests-dropdown__button_minus"
-                        >
-                          -
-                        </button>
+                        ></button>
                         <span class="guests-dropdown__number-wraper">
                           <input
+                            value="1"
                             type="number"
                             min="0"
                             class="guests-dropdown__number"
@@ -104,9 +110,7 @@
                         <button
                           type="button"
                           class="guests-dropdown__button guests-dropdown__button_plus"
-                        >
-                          +
-                        </button>
+                        ></button>
                       </div>
                     </div>
                     <div class="guests-dropdown__item">
@@ -120,9 +124,7 @@
                         <button
                           type="button"
                           class="guests-dropdown__button guests-dropdown__button_minus"
-                        >
-                          -
-                        </button>
+                        ></button>
                         <input
                           type="number"
                           min="0"
@@ -133,9 +135,7 @@
                         <button
                           type="button"
                           class="guests-dropdown__button guests-dropdown__button_plus"
-                        >
-                          +
-                        </button>
+                        ></button>
                       </div>
                     </div>
                   </div>
@@ -164,7 +164,7 @@
                     Не определился
                   </option>
                   <optgroup label="Корпус 1">
-                    <option value="building1-two-beds-without-balcony">
+                    <option selected value="building1-two-beds-without-balcony">
                       Двухместный без балкона
                     </option>
                     <option value="building1-two-beds-with-balcony">
@@ -223,7 +223,7 @@
                     <div class="custom-select__optgroup">
                       <p class="custom-select__optgroup-name">Корпус 1</p>
                       <div
-                        class="custom-select__option"
+                        class="custom-select__option custom-select__option_selected"
                         data-value="building1-two-beds-without-balcony"
                       >
                         Двухместный без балкона
@@ -290,7 +290,7 @@
                 </div>
                 <div id="addSelect" class="booking__add-button">
                   <img
-                    src="./assets/icons/plus-button.svg"
+                    src="./assets/icons/plus.svg"
                     alt=""
                     class="booking__add-button-img"
                   />
@@ -349,7 +349,7 @@
                   id="method"
                   style="display: none"
                 >
-                  <option value="phone">Телефон</option>
+                  <option selected value="phone">Телефон</option>
                   <option value="telegram">Telegram</option>
                   <option value="whatsapp">WhatsApp</option>
                   <option value="email">Электронная почта</option>
@@ -364,7 +364,13 @@
                     <div class="custom-select__icon"></div>
                   </div>
                   <div class="custom-select__body">
-                    <div class="custom-select__option" data-value="phone">
+                    <div class="custom-select__dropdown-header">
+                      Удобный способ связи
+                    </div>
+                    <div
+                      class="custom-select__option custom-select__option_selected"
+                      data-value="phone"
+                    >
                       Телефон
                     </div>
                     <div class="custom-select__option" data-value="telegram">
@@ -399,6 +405,9 @@
               <button class="booking__button">Отправить заявку</button>
             </div>
           </form>
+          <div class="booking__calendar-overlay"></div>
+          <div class="booking__overlay"></div>
+          <div class="booking__guests-overlay"></div>
         </section>
       </main>
       <footer class="footer">

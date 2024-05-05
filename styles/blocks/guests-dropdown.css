@@ -1,8 +1,14 @@
 .guests-dropdown {
+  position: absolute;
+  box-sizing: border-box;
+  top: 100%;
+  z-index: 10;
+  width: 100%;
   box-shadow: 0px 0px 30px 2px rgba(69, 116, 96, 0.1);
   border-radius: 20px;
   padding: 12px 22px;
   display: none;
+  background-color: var(--light-beige);
 }
 
 .guests-dropdown_open {
@@ -37,6 +43,22 @@
   justify-content: space-between;
 }
 
+.guests-dropdown__button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.guests-dropdown__button_plus {
+  background-image: url(../../assets/icons/plus.svg);
+}
+
+.guests-dropdown__button_minus {
+  background-image: url(../../assets/icons/minus.svg);
+}
+
 .guests-dropdown__number {
   width: 20px;
   max-width: 100%;
@@ -54,4 +76,32 @@
 
 .guests-dropdown__number[type="number"] {
   -moz-appearance: textfield;
+}
+
+.guests-dropdown__header {
+  display: none;
+}
+
+@media (max-width: 898px) {
+  .guests-dropdown {
+    width: 100%;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  .guests-dropdown__header {
+    display: block;
+    text-align: center;
+    font-family: "Philosopher";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    padding: 40px 40px 8px;
+    background-color: var(--light-beige);
+  }
 }

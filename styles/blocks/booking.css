@@ -2,6 +2,25 @@
   padding: 100px 288px 136px;
 }
 
+.booking__overlay {
+  display: none;
+}
+
+.booking__guests-overlay {
+  display: none;
+}
+
+.booking__calendar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: none;
+}
+
 .booking__section {
   padding: 60px 112px 0;
   display: grid;
@@ -21,6 +40,7 @@
 .booking__block {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .booking__block_half {
@@ -42,18 +62,42 @@
 
 .booking__text {
   grid-column: span 6;
+  text-align: center;
 }
 
 .booking__input {
+  min-height: 56px;
   border: 1px solid var(--main-green);
   border-radius: 12px;
   background-color: transparent;
   padding: 17px 16px;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+}
+
+.booking__input:hover {
+  background-color: rgba(69, 116, 96, 0.1);
 }
 
 .booking__input:focus {
   background-color: rgba(249, 244, 233, 1);
   outline: none;
+}
+
+.booking__input-container {
+  position: relative;
+}
+
+.booking__calendar-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background-image: url(../../assets/icons/calendar.svg);
+  pointer-events: none;
 }
 
 .booking__input_select {
@@ -131,11 +175,39 @@
 }
 
 .booking__guests {
+  width: 100%;
+  min-height: 56px;
+  box-sizing: border-box;
   border: 1px solid var(--main-green);
   border-radius: 12px;
   background-color: transparent;
   padding: 17px 16px;
   margin: 0;
+  cursor: pointer;
+}
+
+.booking__guests-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/select.svg);
+  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.booking__guests-icon_flipped {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.booking__guests:hover {
+  background-color: rgba(69, 116, 96, 0.1);
+}
+
+.booking__guests-wrapper {
+  position: relative;
 }
 
 @media (max-width: 1375px) {
@@ -147,6 +219,30 @@
 @media (max-width: 1200px) {
   .booking {
     padding: 100px 40px 136px;
+  }
+}
+
+@media (max-width: 898px) {
+  .booking__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: none;
+  }
+
+  .booking__guests-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: none;
   }
 }
 
