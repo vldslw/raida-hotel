@@ -40,7 +40,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
-  padding: 54px 40px;
+  padding: 52px 40px;
 }
 
 .room-details__lower {
@@ -50,8 +50,8 @@
 .room-details__lower_open {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  padding: 20px 40px 60px;
+  column-gap: 14px;
+  padding: 20px 66px 60px 40px;
 }
 
 .room-details__title {
@@ -78,7 +78,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  top: -225px;
+  top: -239px;
 }
 
 .room-details__arrow_prev {
@@ -94,13 +94,14 @@
 .room-details__slider-box {
   grid-column: span 6;
   grid-row: span 2;
+  margin: 0 55px 0 0;
 }
 
 .room-details__description {
   grid-column: 7 / span 6;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  column-gap: 40px;
+  column-gap: 36px;
 }
 
 .room-details__category {
@@ -119,6 +120,10 @@
 .rooms-details__list-item {
   list-style-type: none;
   margin: 0 0 8px;
+}
+
+.rooms-details__list-item:last-of-type {
+  margin: 0;
 }
 
 .room-details__button {
@@ -141,11 +146,13 @@
   font-weight: 500;
   line-height: 20px;
   text-align: left;
+  margin: 13px 0 0 13px;
 }
 
 @media (max-width: 1375px) {
   .room-details__slider-box {
     grid-column: span 5;
+    margin: 0;
   }
 
   .room-details__description {

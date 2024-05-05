@@ -20,6 +20,7 @@
 
 .rooms__img-small {
   object-fit: cover;
+  max-height: 260px;
   border-radius: 20px;
   width: 100%;
   grid-column: 3 / span 4;
