@@ -1,10 +1,16 @@
 .custom-select {
-  margin: 0 0 20px;
+  margin: 0;
   position: relative;
 }
+
+.custom-select_category {
+  margin: 0 0 20px;
+}
+
 .custom-select__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid var(--main-green);
   border-radius: 12px;
   background-color: transparent;

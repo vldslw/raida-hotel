@@ -53,6 +53,11 @@
   color: var(--light-beige);
 }
 
+.header__lower_page_booking {
+  padding: 68px 64px 160px;
+  color: var(--light-beige);
+}
+
 .header__lower_page_about {
   padding: 354px 64px;
 }
@@ -174,6 +179,10 @@
 
   .header__lower_page_rooms {
     padding: 120px 18px 248px;
+  }
+
+  .header__lower_page_booking {
+    padding: 52px 18px 168px;
   }
 
   .header__menu-button {

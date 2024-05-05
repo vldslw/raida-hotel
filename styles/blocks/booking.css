@@ -76,6 +76,10 @@
   cursor: pointer;
 }
 
+.booking__input_textarea {
+  resize: none;
+}
+
 .booking__input:hover {
   background-color: rgba(69, 116, 96, 0.1);
 }
@@ -132,17 +136,23 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;
-  margin: 0;
+  margin: 0 0 8px;
   text-align: center;
 }
 
 .booking__text {
+  margin: 0 0 8px;
+}
+
+.booking__text:last-of-type {
   margin: 0;
+  display: block;
 }
 
 .booking__button {
-  grid-column: span 6;
-  justify-self: center;
+  display: block;
+  text-align: center;
+  margin: 40px auto 0;
   color: var(--white);
   background-color: var(--main-green);
   padding: 20px 24px;
@@ -275,6 +285,7 @@
     grid-column: span 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
     /* column-gap: 32px;
     row-gap: 20px; */
   }
@@ -289,6 +300,7 @@
 
   .booking__title {
     grid-column: span 3;
+    margin: 0 0 20px;
   }
 
   .booking__dates {
@@ -300,6 +312,7 @@
   }
 
   .booking__button {
-    grid-column: span 3;
+    width: 100%;
+    margin: 60px auto 0;
   }
 }

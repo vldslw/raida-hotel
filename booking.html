@@ -22,7 +22,7 @@
           <h1 class="header__logo">Raida</h1>
           <a href="/" class="header__link-button">Выбрать номер</a>
         </div>
-        <div class="header__lower header__lower_page_rooms">
+        <div class="header__lower header__lower_page_booking">
           <h2 class="title">Забронировать номер</h2>
         </div>
       </header>
@@ -31,10 +31,12 @@
           <form id="booking" name="booking" action="" class="booking__form">
             <p class="booking__text">
               Для предварительного бронирования номера заполните форму ниже.
-              <br />
+            </p>
+            <p class="booking__text">
               Ожидайте звонка или сообщения от менеджера в течение 12 часов с
               момента отправки заявки.
-              <br />
+            </p>
+            <p class="booking__text">
               Также вы всегда можете связаться с нами в
               <a href="/" class="booking__link booking__link_bold">Telegram</a>,
               <a href="/" class="booking__link booking__link_bold">WhatsApp</a>
@@ -385,7 +387,7 @@
                 <label for="comment" class="booking__label">Комментарий</label>
                 <textarea
                   type="text"
-                  class="booking__input"
+                  class="booking__input booking__input_textarea"
                   name="comment"
                   id="comment"
                   placeholder="Дополнительная информация, которую вы хотите нам сообщить"
@@ -398,8 +400,8 @@
                   >обработку персональных данных</a
                 >
               </p>
-              <button class="booking__button">Отправить заявку</button>
             </div>
+            <button class="booking__button">Отправить заявку</button>
           </form>
           <div class="booking__calendar-overlay"></div>
           <div class="booking__overlay"></div>
