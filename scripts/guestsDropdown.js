@@ -48,15 +48,23 @@ document.querySelectorAll(".guests-dropdown__button").forEach((button) => {
     let numberElement = event.target.parentElement.querySelector(
       ".guests-dropdown__number"
     );
-    let currentNumber = parseInt(numberElement.value, 10);
+    let count = parseInt(numberElement.value, 10);
+    let minusButton = event.target.parentElement.querySelector(
+      ".guests-dropdown__button_minus"
+    );
 
     if (event.target.classList.contains("guests-dropdown__button_plus")) {
-      ++numberElement.value;
-    } else if (
-      event.target.classList.contains("guests-dropdown__button_minus") &&
-      currentNumber > 0
-    ) {
-      --numberElement.value;
+      count++;
+    } else {
+      count = Math.max(0, count - 1);
+    }
+
+    numberElement.value = count;
+
+    if (count === 0) {
+      minusButton.classList.add("guests-dropdown__button_inactive");
+    } else {
+      minusButton.classList.remove("guests-dropdown__button_inactive");
     }
 
     updateGuestsNumbers();

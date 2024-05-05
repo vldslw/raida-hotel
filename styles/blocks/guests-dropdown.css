@@ -49,6 +49,11 @@
   border: none;
   background: transparent;
   cursor: pointer;
+  border-radius: 200px;
+}
+
+.guests-dropdown__button:hover {
+  background-color: rgba(69, 116, 96, 0.1);
 }
 
 .guests-dropdown__button_plus {
@@ -57,6 +62,10 @@
 
 .guests-dropdown__button_minus {
   background-image: url(../../assets/icons/minus.svg);
+}
+
+.guests-dropdown__button_inactive {
+  background-image: url(../../assets/icons/minus-disabled.svg);
 }
 
 .guests-dropdown__number {

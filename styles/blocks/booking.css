@@ -168,6 +168,11 @@
   width: 32px;
   height: 32px;
   margin-right: 12px;
+  border-radius: 200px;
+}
+
+.booking__add-button-img:hover {
+  background-color: rgba(69, 116, 96, 0.1);
 }
 
 .booking__add-button-text {
