@@ -61,6 +61,18 @@
   font-size: 20px;
   line-height: 20px;
 }
+
+.contact__link-button:hover {
+  border-radius: 32px;
+  background-color: var(--light-beige);
+  color: var(--main-green);
+  border: 1px solid var(--main-green);
+}
+
+.contact__link-button:active {
+  border-radius: 32px;
+}
+
 .contact__text {
   margin: 0 0 20px;
   font-size: 20px;

@@ -118,6 +118,18 @@
   white-space: nowrap;
 }
 
+.header__link-button:hover {
+  background-color: var(--white);
+  box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.4);
+  color: var(--black);
+  border-radius: 32px;
+}
+
+.header__link-button:active {
+  background-color: var(--main-green);
+  color: var(--white);
+}
+
 .header__contacts-list {
   position: relative;
   list-style-type: none;

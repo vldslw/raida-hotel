@@ -166,6 +166,17 @@
   cursor: pointer;
 }
 
+.booking__button:hover {
+  border-radius: 32px;
+  background-color: var(--light-beige);
+  color: var(--main-green);
+  border: 1px solid var(--main-green);
+}
+
+.booking__button:active {
+  border-radius: 32px;
+}
+
 .booking__add-button {
   align-self: start;
   display: flex;
