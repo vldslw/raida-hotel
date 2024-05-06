@@ -45,13 +45,54 @@
 }
 
 .rooms__buildings-selector {
-  margin: 0 32px 0 0;
+  position: relative;
+  min-width: 126px;
+  box-sizing: border-box;
+  margin: 0 30px 0 0;
   list-style: none;
   cursor: pointer;
   padding: 12px 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  z-index: 2;
+}
+
+.rooms__buildings-selector-text {
+  position: relative;
+  z-index: 2;
+}
+
+.rooms__buildings-hover {
+  position: absolute;
+  right: -8px;
+  top: 56%;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: var(--main-green);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  z-index: 0;
+}
+
+.rooms__buildings-selector:hover .rooms__buildings-hover {
+  transform: scaleX(60) scaleY(60);
+  opacity: 1;
+}
+
+.rooms__buildings-selector:hover .rooms__buildings-selector-text {
+  color: var(--light-beige);
+}
+
+.rooms__buildings-selector_state_active:hover .rooms__buildings-selector-text {
+  color: var(--dark-green);
+}
+
+.rooms__buildings-selector_state_active:hover .rooms__buildings-hover {
+  display: none;
 }
 
 .rooms__buildings-selector:last-of-type {

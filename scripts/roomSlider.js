@@ -4,9 +4,11 @@ cards.forEach((card) => {
   let roomSliderMain;
   let roomSliderThumbnails;
 
+  const upper = card.querySelector(".room-details__upper");
   const button = card.querySelector(".room-details__open-button");
 
-  button.addEventListener("click", function () {
+  upper.addEventListener("click", function () {
+    upper.classList.toggle("room-details__upper_open");
     button.classList.toggle("room-details__open-button_state_active");
     const lower = card.querySelector(".room-details__lower");
     lower.classList.toggle("room-details__lower_open");

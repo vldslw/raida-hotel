@@ -3,6 +3,7 @@
   grid-column: span 12;
   border: 1px solid var(--main-green);
   border-radius: 32px;
+  overflow: hidden;
 }
 
 .room-details:first-of-type {
@@ -13,34 +14,27 @@
   border-bottom: 1px solid var(--main-green);
 }
 
+.room-details__upper-img {
+  width: 212px;
+  height: 136px;
+  display: none;
+}
+
 .room-details__card:last-of-type {
   border-bottom: none;
 }
 
-.room-details__open-button {
-  cursor: pointer;
-  background: transparent;
-  background-image: url("../../assets/icons/room-arrow-right.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 20px;
-  border: none;
-  padding: 0;
-  grid-column: span 1;
-  align-self: center;
-  justify-self: end;
-}
-
-.room-details__open-button_state_active {
-  transform: rotate(0.25turn);
-}
-
 .room-details__upper {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  padding: 52px 40px;
+  cursor: pointer;
+  display: flex;
+}
+
+.room-details__upper:hover {
+  background-color: var(--main-green);
+}
+
+.room-details__upper_open:hover {
+  background-color: var(--light-beige);
 }
 
 .room-details__lower {
@@ -55,7 +49,30 @@
 }
 
 .room-details__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  padding: 28px 26px 28px 40px;
+  flex-grow: 1;
+}
+
+.room-details__subtitle {
   grid-column: span 11;
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.room-details__upper:hover .room-details__subtitle {
+  color: var(--light-beige);
+}
+
+.room-details__upper_open:hover .room-details__subtitle {
+  color: var(--dark-green);
 }
 
 .room-details__slider_type_main {
@@ -73,21 +90,27 @@
 .room-details__arrow {
   width: 38px;
   height: 38px;
-  background-color: var(--beige);
-  opacity: 1;
+  border: 2px solid var(--main-green);
+  background-color: var(--light-beige);
+  opacity: 1 !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   top: -239px;
+  background-image: url("../../assets/icons/arrow-round.svg");
+}
+
+.room-details__arrow:hover {
+  background-image: url("../../assets/icons/arrow-round-beige.svg");
+  background-color: var(--main-green);
 }
 
 .room-details__arrow_prev {
-  background-image: url("../../assets/icons/arrow-round-left.svg");
+  transform: rotate(0.5turn) translateY(50%);
   left: -19px;
 }
 
 .room-details__arrow_next {
-  background-image: url("../../assets/icons/arrow-round-right.svg");
   right: -19px;
 }
 
@@ -147,6 +170,91 @@
   line-height: 20px;
   text-align: left;
   margin: 13px 0 0 13px;
+}
+
+.room-details__open-button-container {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-details__open-button {
+  position: absolute;
+  transition: opacity 0.2s ease;
+  z-index: 1;
+}
+
+.room-details__open-button_state_active {
+  transform: rotate(0.25turn);
+}
+
+.room-details__open-button_long {
+  opacity: 1;
+}
+
+.room-details__open-button_short {
+  opacity: 0;
+}
+
+.room-details__open-button_short-beige {
+  transform: rotate(0.25turn);
+  opacity: 0;
+}
+
+.room-details__open-button-circle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: var(--light-beige);
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: 0;
+}
+
+.room-details__upper:hover .room-details__open-button_long {
+  opacity: 0;
+}
+
+.room-details__upper:hover .room-details__open-button_short {
+  opacity: 1;
+}
+
+.room-details__upper:hover .room-details__open-button-circle {
+  width: 80px;
+  height: 80px;
+}
+
+.room-details__upper_open:hover .room-details__open-button-circle {
+  width: 80px;
+  height: 80px;
+  background-color: var(--main-green);
+}
+
+.room-details__upper_open:hover .room-details__open-button_long {
+  opacity: 1;
+}
+
+.room-details__upper_open:hover .room-details__open-button_short {
+  opacity: 0;
+}
+
+.room-details__upper:hover .room-details__upper-img {
+  display: block;
+}
+
+.room-details__upper_open:hover .room-details__upper-img {
+  display: none;
+}
+
+.room-details__upper_open:hover .room-details__open-button_short-beige {
+  opacity: 1;
+}
+
+.room-details__upper_open:hover .room-details__open-button_long {
+  opacity: 0;
 }
 
 @media (max-width: 1375px) {
