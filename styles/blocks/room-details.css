@@ -160,13 +160,14 @@
   padding: 16px 24px;
   min-width: 212px;
   max-height: 52px;
+  border: 1px solid var(--main-green);
+  transition: all 0.3s ease;
 }
 
 .room-details__button:hover {
   border-radius: 32px;
   background-color: var(--light-beige);
   color: var(--main-green);
-  border: 1px solid var(--main-green);
 }
 
 .room-details__button:active {

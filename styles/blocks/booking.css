@@ -144,6 +144,17 @@
   margin: 0 0 8px;
 }
 
+.booking__input_error {
+  border: 1px solid var(--red-error);
+}
+
+.booking__error {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--red-error);
+  display: none;
+}
+
 .booking__text:last-of-type {
   margin: 0;
   display: block;
@@ -164,13 +175,14 @@
   font-size: 20px;
   line-height: 20px;
   cursor: pointer;
+  border: 1px solid var(--main-green);
+  transition: all 0.3s ease;
 }
 
 .booking__button:hover {
   border-radius: 32px;
   background-color: var(--light-beige);
   color: var(--main-green);
-  border: 1px solid var(--main-green);
 }
 
 .booking__button:active {

@@ -30,7 +30,13 @@
       </header>
       <main class="main">
         <section class="booking">
-          <form id="booking" name="booking" action="" class="booking__form">
+          <form
+            id="booking"
+            name="booking"
+            action=""
+            class="booking__form"
+            novalidate
+          >
             <p class="booking__text">
               Для предварительного бронирования номера заполните форму ниже.
             </p>
@@ -311,6 +317,7 @@
                   id="name"
                   placeholder="Ваше имя"
                 />
+                <span id="nameError" class="booking__error"></span>
               </div>
               <div class="booking__subsection">
                 <div class="booking__block booking__block_half">
@@ -324,6 +331,7 @@
                     id="phone"
                     placeholder="+7 (999) 212-85-06"
                   />
+                  <span id="phoneError" class="booking__error"></span>
                 </div>
                 <div class="booking__block booking__block_half">
                   <label for="email" class="booking__label"
@@ -554,7 +562,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <script src="./scripts/roomSlider.js"></script>
   <script src="./scripts/menu.js"></script>
-  <script src="./scripts/form.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
   <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
@@ -562,4 +569,5 @@
   <script src="./scripts/customSelect.js"></script>
   <script src="./scripts/addNewRoomSelect.js"></script>
   <script src="./scripts/guestsDropdown.js"></script>
+  <script src="./scripts/validation.js"></script>
 </html>

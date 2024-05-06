@@ -60,13 +60,14 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  border: 1px solid var(--main-green);
+  transition: all 0.3s ease;
 }
 
 .contact__link-button:hover {
   border-radius: 32px;
   background-color: var(--light-beige);
   color: var(--main-green);
-  border: 1px solid var(--main-green);
 }
 
 .contact__link-button:active {
