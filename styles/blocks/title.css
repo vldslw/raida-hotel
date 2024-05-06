@@ -8,10 +8,39 @@
   text-align: center;
 }
 
+.title__line_first {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.title__line_second {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+.title__line_third {
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+}
+
+.title__line_forth {
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+}
+
 @media (max-width: 768px) {
   .title {
     grid-column: span 3;
     font-size: 38px;
     line-height: 44px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
