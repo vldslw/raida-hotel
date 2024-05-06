@@ -45,6 +45,11 @@
   line-height: 22.4px;
   margin: 0 0 24px;
 }
+
+.footer__navlink:hover {
+  color: var(--white);
+}
+
 .footer__text {
   color: var(--light-beige);
   margin: 0 0 24px;
@@ -53,6 +58,10 @@
 .footer__contact-link {
   text-decoration: none;
   color: var(--light-beige);
+}
+
+.footer__contact-link:hover {
+  color: var(--white);
 }
 
 .footer__link {
