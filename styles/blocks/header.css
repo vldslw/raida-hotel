@@ -1,8 +1,10 @@
 .header {
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
-.header::before {
+.header_home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -16,7 +18,7 @@
   z-index: -1;
 }
 
-.header * {
+.header_home * {
   opacity: 0;
   animation: fadeIn 1s ease-out 0.5s forwards;
 }
