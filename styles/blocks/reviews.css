@@ -56,8 +56,9 @@
 }
 
 .reviews__arrow {
-  width: 192px;
+  width: 194px;
   height: 20px;
+  border-radius: 0;
   background: transparent;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,6 +73,18 @@
 
 .reviews__arrow_next {
   background-image: url("../../assets/icons/arrow-beige-right.svg");
+  right: 0;
+}
+
+.reviews__arrow_prev:not(:disabled):hover {
+  background-image: url("../../assets/icons/arrow-with-circle-left.svg");
+  height: 40px;
+  left: 0;
+}
+
+.reviews__arrow_next:not(:disabled):hover {
+  background-image: url("../../assets/icons/arrow-with-circle.svg");
+  height: 40px;
   right: 0;
 }
 
