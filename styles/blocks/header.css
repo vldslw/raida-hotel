@@ -88,8 +88,19 @@
   text-transform: uppercase;
   grid-column: span 4;
   justify-self: center;
-  color: var(--white);
   margin: 2px 0;
+}
+
+.header__logo-link {
+  text-decoration: none;
+  background: linear-gradient(
+    93.07deg,
+    #fdfcfb 3.09%,
+    #ebdbce 99.36%,
+    #efdcc0 99.36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__link-button {

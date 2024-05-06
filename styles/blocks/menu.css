@@ -42,10 +42,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  border-radius: 32px;
+  overflow: hidden;
 }
 
 .menu__item {
-  padding: 48px 20px;
+  padding: 24px 20px;
   font-family: "Philosopher";
   font-size: 28px;
   font-weight: 700;
@@ -54,9 +56,21 @@
   text-align: left;
 }
 
+.menu__item:hover {
+  background-color: var(--main-green);
+}
+
+.menu__item:hover .menu__link {
+  color: var(--light-beige);
+}
+
 .menu__link {
   text-decoration: none;
   color: var(--dark-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
 .menu__logo {
@@ -106,6 +120,45 @@
 .menu__social-link {
   margin-right: 20px;
   text-decoration: none;
+}
+
+.menu__link-button-container {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__link-button {
+  position: absolute;
+  transition: opacity 0.2s ease;
+  z-index: 1;
+}
+
+.menu__link-button_short {
+  opacity: 0;
+}
+
+.menu__button-circle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: var(--light-beige);
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: 0;
+}
+
+.menu__item:hover .menu__link-button_short {
+  opacity: 1;
+}
+
+.menu__item:hover .menu__button-circle {
+  width: 80px;
+  height: 80px;
+  background-color: var(--light-beige);
 }
 
 @media (max-width: 768px) {
