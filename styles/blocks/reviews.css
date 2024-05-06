@@ -32,8 +32,27 @@
   border: 1px solid var(--light-beige);
   border-radius: 8px;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
   background-color: var(--main-green);
+  transition: all 0.3s ease;
+}
+
+.splide__slide:hover .reviews__card {
+  border: 1px solid var(--main-green);
+  background-color: var(--light-beige);
+  color: var(--main-green);
+}
+
+.splide__slide {
+  overflow: visible;
+  position: relative;
+  padding: 8px;
+  box-sizing: content-box;
+  transition: transform 0.3s ease;
+}
+
+.splide__slide:hover {
+  transform: scale(1.03);
 }
 
 .reviews__arrow {
