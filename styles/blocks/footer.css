@@ -32,6 +32,8 @@
   grid-column: 9 / span 4;
   grid-row: 1;
   margin: 0 0 20px;
+  display: flex;
+  justify-content: start;
 }
 
 .footer__navlink {

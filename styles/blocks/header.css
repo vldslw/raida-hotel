@@ -133,7 +133,25 @@
 }
 
 .header__contact-img {
+  width: 32px;
+  height: 32px;
   display: block;
+}
+
+.header__contact-img_telegram-light {
+  background-image: url(../../assets/icons/telegram-icon-beige.svg);
+}
+
+.header__contact-img_telegram-light:hover {
+  background-image: url(../../assets/icons/telegram-icon-beige-hover.svg);
+}
+
+.header__contact-img_whatsapp-light {
+  background-image: url(../../assets/icons/whatsapp-icon-beige.svg);
+}
+
+.header__contact-img_whatsapp-light:hover {
+  background-image: url(../../assets/icons/whatsapp-icon-beige-hover.svg);
 }
 
 .header__contact {

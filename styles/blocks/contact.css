@@ -14,6 +14,36 @@
   grid-column: 9 / span 3;
 }
 
+.contact__icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.contact__icon_telegram-light {
+  background-image: url(../../assets/icons/telegram-icon-beige.svg);
+}
+
+.contact__icon_telegram-dark {
+  background-image: url(../../assets/icons/telegram-icon-dark.svg);
+}
+
+.contact__icon_telegram-light:hover {
+  background-image: url(../../assets/icons/telegram-icon-beige-hover.svg);
+}
+
+.contact__icon_whatsapp-light {
+  background-image: url(../../assets/icons/whatsapp-icon-beige.svg);
+}
+
+.contact__icon_whatsapp-dark {
+  background-image: url(../../assets/icons/whatsapp-icon-dark.svg);
+}
+
+.contact__icon_whatsapp-light:hover {
+  background-image: url(../../assets/icons/whatsapp-icon-beige-hover.svg);
+}
+
 .contact__link {
   margin: 0 20px 0 0;
   text-decoration: none;
