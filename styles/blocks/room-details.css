@@ -325,6 +325,14 @@
 }
 
 @media (max-width: 768px) {
+  .room-details__upper:hover .room-details__upper-img {
+    display: none;
+  }
+
+  .room-details__upper_open:hover .room-details__upper-img {
+    display: none;
+  }
+
   .tooltip .tooltip__body {
     box-sizing: border-box;
     width: 100%;
@@ -340,10 +348,6 @@
   .room-details {
     grid-column: span 3;
     border-radius: 20px;
-  }
-  .room-details__upper {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 48px 20px;
   }
 
   .room-details__title {

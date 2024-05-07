@@ -100,14 +100,19 @@
 }
 
 @media (max-width: 768px) {
-  .about-section {
+  .about__section {
     padding: 140px 18px 0;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 60px;
   }
 
-  .about-section:last-of-type {
+  .about__list {
+    list-style-type: none;
+    padding-inline-start: 36px;
+  }
+
+  .about__section:last-of-type {
     padding: 140px 0 120px;
   }
 

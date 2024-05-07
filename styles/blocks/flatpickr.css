@@ -155,6 +155,8 @@
     position: fixed;
     top: auto !important;
     bottom: 0;
+    left: auto !important;
+    border-radius: 20px 20px 0 0;
   }
   .flatpickr-innerContainer {
     justify-content: center;

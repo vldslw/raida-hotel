@@ -87,7 +87,7 @@
   .service:nth-child(odd) > :nth-child(1) {
     grid-column: 2 / span 2;
     grid-row: 4;
-    justify-self: end;
+    justify-self: start;
   }
 
   .service:nth-child(odd) > :nth-child(2) {
