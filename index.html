@@ -42,22 +42,23 @@
       <main class="main">
         <section class="info">
           <h2 class="title">
-            <span class="title__line title__line_first"
+            <span class="title__line title__line_first hidden fadein"
               >«Райда» — уютный отель, </span
             ><br />
-            <span class="title__line title__line_second"
+            <span class="title__line title__line_second hidden fadein"
               >который расположен</span
             ><br />
-            <span class="title__line title__line_third"
+            <span class="title__line title__line_third hidden fadein"
               >в живописном районе </span
             ><br />
-            <span class="title__line title__line_forth"
+            <span class="title__line title__line_forth hidden fadein"
               >на самом берегу
-              <span class="title__highlighted">моря</span></span
+              <span class="title__highlighted untriggered color-change"
+                >моря</span
+              ></span
             >
-            <span class="title__highlighted"></span>
           </h2>
-          <a href="/about.html" class="link"
+          <a href="/about.html" class="link hidden fadein"
             >Об отеле
             <div class="link__arrow-container">
               <img
@@ -74,7 +75,7 @@
             </div>
           </a>
         </section>
-        <section class="cards">
+        <section class="cards hidden untriggered fadein">
           <article class="cards__article">
             <h3 class="subtitle">До моря — подать рукой</h3>
             <p class="cards__text">
@@ -123,10 +124,20 @@
         </section>
         <section class="rooms">
           <h2 class="title">
-            Добро пожаловать в наши комфортные номера с потрясающим видом на
-            Черное море
+            <span class="title__line title__line_first hidden fadein"
+              >Добро пожаловать </span
+            ><br />
+            <span class="title__line title__line_second hidden fadein"
+              >в наши комфортные номера </span
+            ><br />
+            <span class="title__line title__line_third hidden fadein"
+              >с потрясающим видом </span
+            ><br />
+            <span class="title__line title__line_forth hidden fadein"
+              >на Черное море
+            </span>
           </h2>
-          <div class="rooms__description">
+          <div class="rooms__description hidden fadein">
             <p class="rooms__text">
               Для размещения отдыхающих в гостинице Райда имеется два спальных
               корпуса общей вместимостью 50 номеров. Все номера имеют
@@ -153,14 +164,14 @@
           <img
             src="./assets/images/rooms-img-large.png"
             alt="Room photo"
-            class="rooms__img-large"
+            class="rooms__img-large hidden fadein"
           />
           <img
             src="./assets/images/rooms-img-small.png"
             alt="Room photo"
-            class="rooms__img-small"
+            class="rooms__img-small hidden fadein"
           />
-          <div class="rooms__buildings">
+          <div class="rooms__buildings hidden fadein">
             <nav class="rooms__buildings-nav">
               <ul class="rooms__buildings-list">
                 <li
@@ -1887,9 +1898,16 @@
           </div>
         </section>
         <section class="services-home">
-          <h2 class="title">Для вас — наш лучший сервис и комплекс услуг</h2>
+          <h2 class="title">
+            <span class="title__line title__line_first hidden fadein"
+              >Для вас — наш лучший сервис </span
+            ><br />
+            <span class="title__line title__line_second hidden fadein"
+              >и комплекс услуг</span
+            >
+          </h2>
           <article class="service">
-            <div class="service__description">
+            <div class="service__description hidden fadein">
               <h3 class="subtitle">Ресторан</h3>
               <a href="/" class="link"
                 >Подробнее
@@ -1911,16 +1929,16 @@
             <img
               src="./assets/images/restaurant-1.png"
               alt="Room photo"
-              class="service__img"
+              class="service__img hidden fadein"
             />
             <img
               src="./assets/images/restaurant-2.png"
               alt="Room photo"
-              class="service__img"
+              class="service__img hidden fadein"
             />
           </article>
           <article class="service">
-            <div class="service__description">
+            <div class="service__description hidden fadein">
               <h3 class="subtitle">Массаж</h3>
               <a href="/" class="link"
                 >Подробнее
@@ -1941,16 +1959,16 @@
             <img
               src="./assets/images/massage-1.png"
               alt="Room photo"
-              class="service__img"
+              class="service__img hidden fadein"
             />
             <img
               src="./assets/images/massage-2.png"
               alt="Room photo"
-              class="service__img"
+              class="service__img hidden fadein"
             />
           </article>
           <article class="service">
-            <div class="service__description">
+            <div class="service__description hidden fadein">
               <h3 class="subtitle">Косметолог</h3>
               <a href="/" class="link"
                 >Подробнее
@@ -1971,22 +1989,29 @@
             <img
               src="./assets/images/cosmetology-1.png"
               alt="Room photo"
-              class="service__img"
+              class="service__img hidden fadein"
             />
             <img
               src="./assets/images/cosmetology-2.png"
               alt="Room photo"
-              class="service__img"
+              class="service__img hidden fadein"
             />
           </article>
         </section>
         <section class="reviews">
           <div class="reviews__title-wraper">
-            <h2 class="title">Наша гордость — ваши отзывы</h2>
+            <h2 class="title">
+              <span class="title__line title__line_first hidden fadein"
+                >Наша гордость
+              </span>
+              <span class="title__line title__line_second hidden fadein"
+                >— ваши отзывы</span
+              >
+            </h2>
           </div>
           <div
             id="reviewsSlider"
-            class="reviews__slider splide"
+            class="reviews__slider hidden fadein splide"
             aria-label="Splide Basic HTML Example"
           >
             <div class="splide__arrows">
@@ -2084,10 +2109,10 @@
           </div>
         </section>
         <section class="gallery">
-          <h2 class="title">Галерея</h2>
+          <h2 class="title hidden fadein">Галерея</h2>
           <div
             id="gallerySlider"
-            class="gallery__slider splide"
+            class="gallery__slider splide hidden fadein"
             aria-label="Splide Basic HTML Example"
           >
             <div class="splide__track">
@@ -2125,8 +2150,15 @@
           </div>
         </section>
         <section class="contact">
-          <h2 class="title">Если у вас остались вопросы — свяжитесь с нами</h2>
-          <div class="contact__address">
+          <h2 class="title">
+            <span class="title__line title__line_first hidden fadein"
+              >Если у вас остались вопросы</span
+            ><br />
+            <span class="title__line title__line_second hidden fadein"
+              >— свяжитесь с нами</span
+            >
+          </h2>
+          <div class="contact__address hidden fadein">
             <h3 class="subtitle">Наш адрес:</h3>
             <p class="contact__address-text">
               Абхазия, г. Гагра. пр. им. В.Ардзинба(Нартаа) 49-А
@@ -2147,7 +2179,7 @@
                 <div class="link__circle"></div></div
             ></a>
           </div>
-          <div class="contact__contacts">
+          <div class="contact__contacts hidden fadein">
             <h3 class="subtitle">Контакты:</h3>
             <p class="contact__text">+7 (840) 234-14-00</p>
             <p class="contact__text">rayda-ray@mail.ru</p>
@@ -2158,14 +2190,16 @@
               <div class="contact__icon contact__icon_telegram-dark"></div>
             </a>
           </div>
-          <a href="/" class="contact__link-button">Заказать консультацию</a>
+          <a href="/" class="contact__link-button hidden fadein"
+            >Заказать консультацию</a
+          >
         </section>
         <section class="welcome">
-          <h2 class="title">Ждем вас в гости</h2>
+          <h2 class="title hidden fadein">Ждем вас в гости</h2>
           <img
             src="./assets/images/welcome-hotel.png"
             alt="Photo of the hotel"
-            class="welcome__img"
+            class="welcome__img hidden fadein"
           />
         </section>
       </main>
@@ -2316,4 +2350,5 @@
   <script src="./scripts/reviewsSlider.js"></script>
   <script src="./scripts/roomSlider.js"></script>
   <script src="./scripts/menu.js"></script>
+  <script defer src="./scripts/scroll.js"></script>
 </html>
