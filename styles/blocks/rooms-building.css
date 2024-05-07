@@ -24,6 +24,12 @@
   grid-column: span 12;
 }
 
+@media (min-width: 1441px) {
+  .rooms-building {
+    padding: 180px calc((100vw - 1312px) / 2) 0;
+  }
+}
+
 @media (max-width: 1120px) {
   .rooms-building__link {
     display: none;

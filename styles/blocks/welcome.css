@@ -13,6 +13,12 @@
   border-radius: 20px;
 }
 
+@media (min-width: 1441px) {
+  .welcome {
+    padding: 0 calc((100vw - 1312px) / 2) 120px;
+  }
+}
+
 @media (max-width: 768px) {
   .welcome {
     grid-template-columns: repeat(3, 1fr);

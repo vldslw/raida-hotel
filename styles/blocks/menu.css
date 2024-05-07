@@ -73,6 +73,10 @@
   cursor: pointer;
 }
 
+.menu__link span {
+  margin: 0 30px 0 0;
+}
+
 .menu__logo {
   margin: 0;
   display: none;
@@ -170,6 +174,22 @@
   width: 80px;
   height: 80px;
   background-color: var(--light-beige);
+}
+
+@media (min-width: 1441px) {
+  .menu__header {
+    padding: 30px calc((100vw - 1312px) / 2);
+  }
+  .menu__body {
+    padding: 20px 160px 158px calc((100vw - 1136px) / 2);
+  }
+}
+
+@media (max-width: 1320px) {
+  .menu__body {
+    grid-column: span 7;
+    padding: 20px 0 158px 87px;
+  }
 }
 
 @media (max-width: 768px) {

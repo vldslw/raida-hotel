@@ -79,6 +79,10 @@
   background: transparent;
 }
 
+.header__upper_about {
+  background: linear-gradient(180deg, #6687c9 0%, rgba(102, 135, 201, 0) 100%);
+}
+
 .header__lower {
   padding: 400px 64px 44px;
   grid-column: span 12;
@@ -231,6 +235,30 @@
 
   .header_page_booking {
     background-image: url("../../assets/icons/Waves-bg-header-1800px-480px.svg");
+  }
+
+  .header__upper {
+    padding: 24px calc((100vw - 1312px) / 2);
+  }
+
+  .header__lower {
+    padding: 400px calc((100vw - 1312px) / 2) 44px;
+  }
+
+  .header__lower_page_about {
+    padding: 354px calc((100vw - 1312px) / 2);
+  }
+
+  .header__lower_page_services {
+    padding: 354px calc((100vw - 1312px) / 2);
+  }
+
+  .header__lower_page_rooms {
+    padding: 60px calc((100vw - 1312px) / 2) 160px;
+  }
+
+  .header__lower_page_booking {
+    padding: 68px calc((100vw - 1312px) / 2) 160px;
   }
 }
 

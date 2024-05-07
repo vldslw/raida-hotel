@@ -6,6 +6,12 @@
   row-gap: 80px;
 }
 
+@media (min-width: 1441px) {
+  .info {
+    padding: 180px calc((100vw - 1312px) / 2);
+  }
+}
+
 @media (max-width: 768px) {
   .info {
     padding: 140px 18px 100px;

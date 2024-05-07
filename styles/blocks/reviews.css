@@ -100,6 +100,7 @@
   .reviews {
     background-image: url("../../assets/icons/Waves-bg-block2-full-1800px-1100px.svg");
     min-height: 1100px;
+    padding: 162px calc((100vw - 1312px) / 2) 188px;
   }
 }
 

@@ -24,6 +24,7 @@
   .cards {
     background-image: url("../../assets/icons/Waves-bg-block1-full-1800px-840px.svg");
     min-height: 840px;
+    padding: 180px calc((100vw - 1312px) / 2);
   }
 }
 

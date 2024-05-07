@@ -5,6 +5,12 @@
   column-gap: 32px;
 }
 
+@media (min-width: 1441px) {
+  .services-home {
+    padding: 0 calc((100vw - 1312px) / 2) 180px;
+  }
+}
+
 @media (max-width: 768px) {
   .services-home {
     padding: 0 18px 140px;

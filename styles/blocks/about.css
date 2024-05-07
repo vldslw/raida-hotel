@@ -113,6 +113,16 @@
   grid-column: 3 / span 8;
 }
 
+@media (min-width: 1441px) {
+  .about__section {
+    padding: 180px calc((100vw - 1312px) / 2) 0;
+  }
+
+  .about__section:last-of-type {
+    padding: 180px calc((100vw - 1312px) / 2) 120px;
+  }
+}
+
 @media (max-width: 768px) {
   .about__section {
     padding: 140px 18px 0;

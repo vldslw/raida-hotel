@@ -96,6 +96,12 @@
   font-size: 20px;
 }
 
+@media (min-width: 1441px) {
+  .contact {
+    padding: 180px calc((100vw - 1312px) / 2);
+  }
+}
+
 @media (max-width: 768px) {
   .contact {
     grid-template-columns: repeat(3, 1fr);

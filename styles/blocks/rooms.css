@@ -103,6 +103,12 @@
   border-bottom: 1px solid var(--dark-green);
 }
 
+@media (min-width: 1441px) {
+  .rooms {
+    padding: 180px calc((100vw - 1312px) / 2);
+  }
+}
+
 @media (max-width: 768px) {
   .rooms {
     padding: 140px 18px;

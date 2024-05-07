@@ -9,6 +9,12 @@
   max-height: 800px;
 }
 
+@media (min-width: 1441px) {
+  .rooms-upper {
+    padding: 140px calc((100vw - 1312px) / 2) 0;
+  }
+}
+
 @media (max-width: 768px) {
   .rooms-upper {
     padding: 100px 0 0;
