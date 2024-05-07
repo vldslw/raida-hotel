@@ -47,6 +47,9 @@ function initPickers() {
       }
     },
     onChange: function (selectedDates, dateStr, instance) {
+      var nextDay = new Date(selectedDates[0]);
+      nextDay.setDate(nextDay.getDate() + 1);
+      checkoutPicker.set("minDate", nextDay);
       if (selectedDates.length > 0) {
         var date = selectedDates[0];
         checkinFormattedDate =
@@ -93,6 +96,9 @@ function initPickers() {
       }
     },
     onChange: function (selectedDates, dateStr, instance) {
+      var previousDay = new Date(selectedDates[0]);
+      previousDay.setDate(previousDay.getDate() - 1);
+      checkinPicker.set("maxDate", previousDay);
       if (selectedDates.length > 0) {
         var date = selectedDates[0];
         var formattedDate =
