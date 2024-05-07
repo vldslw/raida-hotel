@@ -29,16 +29,18 @@ bookingForm.addEventListener("submit", (e) => {
     phoneInput.classList.add("booking__input_error");
     phoneError.innerText = "Введите номер телефона";
     return;
-  } else if (
-    /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(
-      phoneInput.value
-    ) === false
-  ) {
-    phoneError.style.display = "block";
-    phoneInput.classList.add("booking__input_error");
-    phoneError.innerText = "Некорректный формат номера телефона";
-    return;
-  } else {
+  }
+  // else if (
+  //   /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(
+  //     phoneInput.value
+  //   ) === false
+  // ) {
+  //   phoneError.style.display = "block";
+  //   phoneInput.classList.add("booking__input_error");
+  //   phoneError.innerText = "Некорректный формат номера телефона";
+  //   return;
+  // }
+  else {
     phoneError.style.display = "none";
   }
 
