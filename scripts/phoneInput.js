@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let inputNumbersValue = getInputNumberValues(input);
     let formattedInputValue = "";
     selectionStart = input.selectionStart;
-    console.log(inputNumbersValue);
 
     if (!inputNumbersValue) {
       return (input.value = "");
@@ -42,10 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (inputNumbersValue.length >= 10) {
         formattedInputValue += "-" + inputNumbersValue.substring(9, 11);
       }
-      console.log("Russian phone number");
     } else {
       // Номер из другой страны
-      console.log("Not a Russian phone number");
       formattedInputValue = input.value = "+" + inputNumbersValue;
     }
     input.value = formattedInputValue;
