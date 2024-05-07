@@ -44,6 +44,14 @@
   background-image: url(../../assets/icons/whatsapp-icon-beige-hover.svg);
 }
 
+.contact__icon_telegram-dark:hover {
+  background-image: url(../../assets/icons/telegram-icon-dark-hover.svg);
+}
+
+.contact__icon_whatsapp-dark:hover {
+  background-image: url(../../assets/icons/whatsapp-icon-dark-hover.svg);
+}
+
 .contact__link {
   margin: 0 20px 0 0;
   text-decoration: none;
