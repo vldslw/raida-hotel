@@ -48,8 +48,8 @@
 
 .menu__item {
   padding: 24px 20px;
-  font-family: "Philosopher";
-  font-size: 28px;
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0.01em;
@@ -92,9 +92,9 @@
 
 .menu__sidebar-logo {
   margin: 0 0 80px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 40px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -120,8 +120,8 @@
 }
 .menu__text {
   margin: 0;
-  font-family: Montserrat;
-  font-size: 16px;
+  font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 22.4px;
   text-align: left;
@@ -204,9 +204,9 @@
 
   .menu__logo {
     display: block;
-    font-family: "Montserrat";
+    font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 40px;
     text-transform: uppercase;
     letter-spacing: 0.04em;

@@ -64,9 +64,9 @@
   padding: 20px 24px;
   border-radius: 8px;
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 20px;
   border: 1px solid var(--main-green);
   transition: all 0.3s ease;
@@ -84,7 +84,7 @@
 
 .contact__text {
   margin: 0 0 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .contact__text:first-of-type {
@@ -93,7 +93,7 @@
 
 .contact__address-text {
   margin: 20px 0 76px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 1441px) {

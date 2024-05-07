@@ -1,7 +1,7 @@
 .title {
-  font-family: "Philosopher";
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 72px;
   margin: 0;
   grid-column: 3 / span 8;
@@ -15,7 +15,7 @@
 @media (max-width: 768px) {
   .title {
     grid-column: span 3;
-    font-size: 38px;
+    font-size: 2.375rem;
     line-height: 44px;
   }
 }

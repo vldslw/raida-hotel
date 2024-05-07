@@ -114,8 +114,8 @@
 }
 
 .booking__label {
-  font-family: Montserrat;
-  font-size: 16px;
+  font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 22.4px;
   text-align: left;
@@ -140,9 +140,9 @@
 }
 
 .booking__title {
-  font-family: "Philosopher";
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 32px;
   margin: 0 0 8px;
   text-align: center;
@@ -158,7 +158,7 @@
 
 .booking__error {
   margin: 8px 0 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--red-error);
   display: none;
 }
@@ -178,9 +178,9 @@
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 20px;
   cursor: pointer;
   border: 1px solid var(--main-green);

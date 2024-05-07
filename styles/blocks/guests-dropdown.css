@@ -22,12 +22,12 @@
 
 .guests-dropdown__text-upper {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--dark-green);
 }
 
 .guests-dropdown__text-lower {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgba(70, 91, 74, 0.6);
 }
 
@@ -114,8 +114,8 @@
   .guests-dropdown__header {
     display: block;
     text-align: center;
-    font-family: "Philosopher";
-    font-size: 28px;
+    font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
+    font-size: 1.75rem;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 0.01em;

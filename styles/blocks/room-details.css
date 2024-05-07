@@ -59,9 +59,9 @@
 
 .room-details__subtitle {
   grid-column: span 11;
-  font-family: "Philosopher";
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 32px;
   margin: 0 30px 0 0;
 }
@@ -153,7 +153,7 @@
   background-color: var(--main-green);
   border: none;
   border-radius: 8px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--light-beige);
   cursor: pointer;
   padding: 16px 24px;
@@ -176,7 +176,7 @@
 .room-details__price {
   grid-column: 4 / span 2;
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 20px;
   text-align: left;

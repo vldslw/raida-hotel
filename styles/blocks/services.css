@@ -28,7 +28,7 @@
 
 .services__subtitle {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 22.4px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .services__item::marker {
-  font-size: 8px;
+  font-size: 0.5rem;
 }
 
 .services__text {
@@ -48,27 +48,27 @@
 }
 
 .services__title-side-right {
-  font-family: "Philosopher";
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 72px;
   margin: 0;
   grid-column: 8 / span 5;
 }
 
 .services__title-side-right-six {
-  font-family: "Philosopher";
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 72px;
   margin: 0;
   grid-column: 7 / span 6;
 }
 
 .services__title-side-left {
-  font-family: "Philosopher";
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 72px;
   margin: 0;
   grid-column: 1 / span 5;
@@ -181,19 +181,19 @@
 
   .services__title-side-right {
     grid-column: span 3;
-    font-size: 38px;
+    font-size: 2.375rem;
     line-height: 44px;
   }
 
   .services__title-side-right-six {
     grid-column: span 3;
-    font-size: 38px;
+    font-size: 2.375rem;
     line-height: 44px;
   }
 
   .services__title-side-left {
     grid-column: span 3;
-    font-size: 38px;
+    font-size: 2.375rem;
     line-height: 44px;
   }
 

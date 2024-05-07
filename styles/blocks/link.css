@@ -1,8 +1,8 @@
 .link {
   color: var(--dark-green);
-  font-family: "Montserrat";
+  font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 20px;
   text-decoration: none;
   grid-column: 3 / span 8;
