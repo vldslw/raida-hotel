@@ -6,6 +6,14 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
+  row-gap: 100px;
+}
+
+.services__block {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
   row-gap: 80px;
 }
 
@@ -32,6 +40,10 @@
 }
 
 .services__text {
+  margin: 0 0 8px;
+}
+
+.services__text:last-of-type {
   margin: 0;
 }
 
@@ -145,8 +157,16 @@
     row-gap: 60px;
   }
 
+  .services__block {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 60px;
+  }
+
   .services__section:last-of-type {
-    padding: 140px 0 120px;
+    padding: 140px 18px 120px;
   }
 
   .services__title-side-right {

@@ -266,6 +266,14 @@
     padding: 52px 18px 168px;
   }
 
+  .header__lower_page_services {
+    padding: 332px 0;
+  }
+
+  .header__lower_page_about {
+    padding: 302px 0;
+  }
+
   .header__menu-button {
     grid-column: span 1;
   }

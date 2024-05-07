@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.title_services {
+  margin: 0 0 100px 0;
+}
+
 @media (max-width: 768px) {
   .title {
     grid-column: span 3;

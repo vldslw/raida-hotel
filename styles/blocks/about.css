@@ -13,6 +13,8 @@
 .about__img {
   width: 100%;
   border-radius: 20px;
+  max-height: 533px;
+  object-fit: cover;
 }
 
 .about__text {
@@ -46,9 +48,21 @@
 }
 
 .about__iframe {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
   border: 0;
   border-radius: 12px;
+  overflow: hidden;
+}
+
+.about__iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .about__six-col-left {
@@ -146,5 +160,25 @@
 
   .about__eight-col {
     grid-column: span 3;
+  }
+
+  .about__col_mobile-second-row {
+    grid-row: 2;
+  }
+
+  .about__col_mobile-third-row {
+    grid-row: 3;
+  }
+
+  .about__col_mobile-fifth-row {
+    grid-row: 5;
+  }
+
+  .about__col_mobile-seventh-row {
+    grid-row: 7;
+  }
+
+  .about__col_mobile-eighth-row {
+    grid-row: 8;
   }
 }
