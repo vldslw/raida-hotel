@@ -132,6 +132,10 @@
   color: var(--light-beige);
 }
 
+.menu__contact-link:hover {
+  color: var(--white);
+}
+
 .menu__social-link {
   margin-right: 20px;
   text-decoration: none;
