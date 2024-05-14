@@ -299,9 +299,6 @@
   opacity: 1;
 }
 
-.tooltip__text {
-}
-
 @media (max-width: 1375px) {
   .room-details__slider-box {
     grid-column: span 5;

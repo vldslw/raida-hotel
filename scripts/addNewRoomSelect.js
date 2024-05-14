@@ -45,6 +45,7 @@ document.getElementById("addSelect").addEventListener("click", function () {
 
   let newSelect = select.cloneNode(true);
   newSelect.id = "category" + selectCount;
+  newSelect.name = "category" + selectCount;
   newSelect.style.display = "none";
 
   let newCustomSelect = customSelect.cloneNode(true);

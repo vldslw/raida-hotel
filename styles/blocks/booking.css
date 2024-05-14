@@ -80,6 +80,10 @@
   cursor: pointer;
 }
 
+.booking__input_captcha {
+  text-align: end;
+}
+
 .booking__input_textarea {
   resize: none;
 }
@@ -161,6 +165,10 @@
   font-size: 0.875rem;
   color: var(--red-error);
   display: none;
+}
+
+.booking__error_captcha {
+  text-align: center;
 }
 
 .booking__text:last-of-type {
