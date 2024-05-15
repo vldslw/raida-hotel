@@ -95,14 +95,18 @@
 .room-details__arrow {
   width: 38px;
   height: 38px;
-  border: 2px solid var(--main-green);
+  transform-origin: bottom;
+  border: 1.5px solid var(--main-green);
   background-color: var(--light-beige);
   opacity: 1 !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  top: -239px;
+  top: -200%;
   background-image: url("../../assets/icons/arrow-round.svg");
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    background-image 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    background-color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .room-details__arrow:hover {
@@ -115,8 +119,25 @@
   left: -19px;
 }
 
+.room-details__arrow_prev:hover {
+  transform: scale(1.2368) rotate(0.5turn) translateY(50%);
+}
+
+.room-details__arrow_prev:active {
+  transform: scale(1) rotate(0.5turn) translateY(50%);
+}
+
 .room-details__arrow_next {
+  transform: translateY(50%);
   right: -19px;
+}
+
+.room-details__arrow_next:hover {
+  transform: scale(1.2368) translateY(50%);
+}
+
+.room-details__arrow_next:active {
+  transform: scale(1) translateY(50%);
 }
 
 .room-details__slider-box {
