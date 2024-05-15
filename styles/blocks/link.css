@@ -9,7 +9,7 @@
   text-align: center;
   position: relative;
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   transition: color 0.4s ease;
 }
 
