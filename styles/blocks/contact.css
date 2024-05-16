@@ -70,7 +70,7 @@
   font-size: 1.25rem;
   line-height: 20px;
   border: 1px solid var(--main-green);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in;
 }
 
 .contact__link-button:hover {
@@ -81,6 +81,8 @@
 
 .contact__link-button:active {
   border-radius: 32px;
+  background-color: var(--main-green);
+  color: var(--light-beige);
 }
 
 .contact__text {

@@ -192,7 +192,7 @@
   line-height: 20px;
   cursor: pointer;
   border: 1px solid var(--main-green);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in;
 }
 
 .booking__button:hover {
@@ -203,6 +203,8 @@
 
 .booking__button:active {
   border-radius: 32px;
+  background-color: var(--main-green);
+  color: var(--light-beige);
 }
 
 .booking__add-button {

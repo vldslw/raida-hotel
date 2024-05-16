@@ -172,6 +172,7 @@
 .header__link-button:active {
   background-color: var(--main-green);
   color: var(--white);
+  box-shadow: none;
 }
 
 .header__contacts-list {
