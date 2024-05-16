@@ -189,6 +189,9 @@
   line-height: 20px;
   border: 1px solid var(--main-green);
   transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .room-details__button:hover {
