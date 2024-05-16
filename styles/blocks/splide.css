@@ -9,3 +9,13 @@
   > .splide__slide.room-details__slide_type_thumbnails.is-active {
   border: none;
 }
+
+.splide__slide.room-details__slide_type_thumbnails.is-active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 244, 223, 0.3);
+}

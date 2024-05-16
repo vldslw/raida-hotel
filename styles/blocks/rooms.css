@@ -65,21 +65,21 @@
 
 .rooms__buildings-hover {
   position: absolute;
-  right: -8px;
-  top: 56%;
-  width: 2px;
-  height: 2px;
+  right: -9px;
+  top: -84%;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   opacity: 1;
   background-color: var(--main-green);
   transform-origin: right;
-  transition: transform 0.3s ease;
-  transform: scaleX(0);
+  transition: transform 0.6s ease-in-out;
+  transform: scale(0);
   z-index: 0;
 }
 
 .rooms__buildings-selector:hover .rooms__buildings-hover {
-  transform: scaleX(60) scaleY(60);
+  transform: scale(1);
   opacity: 1;
 }
 
