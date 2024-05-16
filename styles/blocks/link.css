@@ -29,7 +29,7 @@
 
 .link__arrow {
   position: absolute;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.1s;
   z-index: 1;
 }
 
@@ -47,8 +47,19 @@
   height: 0;
   border-radius: 50%;
   background-color: var(--main-green);
-  transition: width 0.4s ease, height 0.4s ease;
+  transition: width 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    height 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   z-index: 0;
+}
+
+.link:hover .link__circle {
+  width: 80px;
+  height: 80px;
+}
+
+.link:active .link__circle {
+  width: 60px;
+  height: 60px;
 }
 
 .link:hover .link__arrow_long {
@@ -57,11 +68,6 @@
 
 .link:hover .link__arrow_short {
   opacity: 1;
-}
-
-.link:hover .link__circle {
-  width: 80px;
-  height: 80px;
 }
 
 @media (max-width: 768px) {

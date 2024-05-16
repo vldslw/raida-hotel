@@ -267,14 +267,17 @@
   height: 80px;
 }
 
+.room-details__upper:active .room-details__open-button-circle {
+  width: 60px;
+  height: 60px;
+}
+
 .room-details__upper:not(.room-details__upper_open):hover .room-details__title {
   margin-left: 0;
   background-color: var(--main-green);
 }
 
 .room-details__upper_open:hover .room-details__open-button-circle {
-  width: 80px;
-  height: 80px;
   background-color: var(--main-green);
 }
 
