@@ -52,6 +52,22 @@
   background-image: url(../../assets/icons/whatsapp-icon-dark-hover.svg);
 }
 
+.contact__icon_instagram-light {
+  background-image: url(../../assets/icons/instagram-icon-beige.svg);
+}
+
+.contact__icon_instagram-light:hover {
+  background-image: url(../../assets/icons/instagram-icon-beige-hover.svg);
+}
+
+.contact__icon_instagram-dark {
+  background-image: url(../../assets/icons/instagram-icon-dark.svg);
+}
+
+.contact__icon_instagram-dark:hover {
+  background-image: url(../../assets/icons/instagram-icon-dark-hover.svg);
+}
+
 .contact__link {
   margin: 0 20px 0 0;
   text-decoration: none;
