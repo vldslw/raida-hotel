@@ -83,6 +83,11 @@
   opacity: 1;
 }
 
+.rooms__buildings-selector:active .rooms__buildings-hover {
+  transform: scale(0.83);
+  transform-origin: left;
+}
+
 .rooms__buildings-selector:hover .rooms__buildings-selector-text {
   color: var(--light-beige);
 }
