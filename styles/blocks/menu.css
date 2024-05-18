@@ -17,10 +17,16 @@
   transform: scale(1);
 }
 
+.menu__social {
+  display: flex;
+  align-items: center;
+}
+
 .menu__icon {
   width: 32px;
   height: 32px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .menu__header {
@@ -144,6 +150,8 @@
 }
 
 .menu__social-link {
+  height: 32px;
+  width: 32px;
   margin-right: 20px;
   text-decoration: none;
 }
