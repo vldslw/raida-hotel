@@ -202,6 +202,12 @@
   background-color: var(--light-beige);
 }
 
+.menu__item:active .menu__button-circle {
+  width: 60px;
+  height: 60px;
+  background-color: var(--light-beige);
+}
+
 @media (min-width: 1441px) {
   .menu__header {
     padding: 30px calc((100vw - 1312px) / 2);
