@@ -55,6 +55,11 @@
   margin: 0 0 24px;
 }
 
+.footer__text_phones {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__contact-link {
   text-decoration: none;
   color: var(--light-beige);

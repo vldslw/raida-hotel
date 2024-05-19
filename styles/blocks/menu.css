@@ -139,6 +139,11 @@
   text-align: left;
 }
 
+.menu__text_phones {
+  display: flex;
+  flex-direction: column;
+}
+
 .menu__contact-link {
   text-decoration: none;
   color: var(--light-beige);
