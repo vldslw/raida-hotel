@@ -1,3 +1,5 @@
+var reviewsOverlay = document.querySelector(".reviews__overlay");
+
 var reviewsSlider = new Splide("#reviewsSlider", {
   perPage: 3,
   padding: {
@@ -28,6 +30,7 @@ reviewsSlider.on("mounted", () => {
         card.classList.add("reviews__card_expanded");
         openCardButton.classList.add("reviews__open-card_hidden");
         closeCardButton.classList.add("reviews__close-card_active");
+        reviewsOverlay.style.display = "block";
       });
     } else {
       console.error("Open card button not found");
@@ -49,6 +52,7 @@ reviewsSlider.on("mounted", () => {
       card.classList.remove("reviews__card_expanded");
       openCardButton.classList.remove("reviews__open-card_hidden");
       closeCardButton.classList.remove("reviews__close-card_active");
+      reviewsOverlay.style.display = "none";
       if (nextSibling) {
         parent.insertBefore(card, nextSibling);
       } else {
