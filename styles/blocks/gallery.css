@@ -10,6 +10,16 @@
   grid-column: span 12;
 }
 
+.gallery__slider_enlarged {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 640px;
+  height: 600px;
+  z-index: 1000;
+}
+
 .gallery__slide {
   border-radius: 20px;
   overflow: hidden;

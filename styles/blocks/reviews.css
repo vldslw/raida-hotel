@@ -71,7 +71,7 @@
   padding: 40px 32px 74px;
   border: 1px solid var(--light-beige);
   border-radius: 8px;
-  height: auto;
+  height: 100%;
   background-color: var(--main-green);
   overflow: hidden;
 }
@@ -85,15 +85,15 @@
   background-color: var(--light-beige);
   border-color: var(--dark-green);
   z-index: 1000;
-  overflow: auto;
+  height: auto;
   padding: 32px;
   display: inline-block;
   box-sizing: border-box;
 }
 
-.reviews__card_expanded .reviews__text {
+/* .reviews__card_expanded .reviews__text {
   overflow: scroll;
-}
+} */
 
 .splide__slide:hover .reviews__open-card {
   background: linear-gradient(

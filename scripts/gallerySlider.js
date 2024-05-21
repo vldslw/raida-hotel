@@ -1,3 +1,11 @@
+var gallerySliderEnlarged = new Splide("#gallerySliderEnlarged", {
+  type: "fade",
+  heightRatio: 0.5,
+  pagination: false,
+  arrows: false,
+  cover: true,
+});
+
 var gallerySlider = new Splide("#gallerySlider", {
   height: "240px",
   breakpoints: {
@@ -9,6 +17,7 @@ var gallerySlider = new Splide("#gallerySlider", {
       perPage: 1,
     },
   },
+  isNavigation: true,
   cover: true,
   type: "loop",
   drag: "free",
@@ -18,8 +27,10 @@ var gallerySlider = new Splide("#gallerySlider", {
   pagination: false,
   perPage: 3,
   autoScroll: {
-    speed: 0.3,
+    speed: 0.6,
   },
 });
 
+gallerySliderEnlarged.sync(gallerySlider);
+gallerySliderEnlarged.mount();
 gallerySlider.mount(window.splide.Extensions);
