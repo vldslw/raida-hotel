@@ -1,9 +1,15 @@
 var gallerySliderEnlarged = new Splide("#gallerySliderEnlarged", {
-  type: "fade",
-  heightRatio: 0.5,
+  width: "100vw",
+  type: "slide",
+  heightRatio: 0.45,
   pagination: false,
-  arrows: false,
+  // arrows: true,
   cover: true,
+  breakpoints: {
+    768: {
+      heightRatio: 1,
+    },
+  },
 });
 
 var gallerySlider = new Splide("#gallerySlider", {
@@ -31,6 +37,26 @@ var gallerySlider = new Splide("#gallerySlider", {
   },
 });
 
+var galleryOverlay = document.querySelector(".gallery__overlay");
+var enlargedSlider = document.getElementById("gallerySliderEnlarged");
+var slides = document.querySelectorAll(".gallery__slide_small");
+
+gallerySlider.on("mounted", () => {
+  slides.forEach((slide) => {
+    slide.addEventListener("click", function () {
+      console.log("open");
+
+      enlargedSlider.style.display = "block";
+      galleryOverlay.style.display = "block";
+      gallerySliderEnlarged.mount();
+    });
+  });
+});
+
+galleryOverlay.addEventListener("click", function () {
+  enlargedSlider.style.display = "none";
+  galleryOverlay.style.display = "none";
+});
+
 gallerySliderEnlarged.sync(gallerySlider);
-gallerySliderEnlarged.mount();
 gallerySlider.mount(window.splide.Extensions);
