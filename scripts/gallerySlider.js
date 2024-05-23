@@ -1,9 +1,8 @@
 var gallerySliderEnlarged = new Splide("#gallerySliderEnlarged", {
   width: "100vw",
-  type: "slide",
+  type: "loop",
   heightRatio: 0.45,
   pagination: false,
-  // arrows: true,
   cover: true,
   breakpoints: {
     768: {
