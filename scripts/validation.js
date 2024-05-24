@@ -12,6 +12,14 @@ const phoneError = document.getElementById("phoneError");
 const emailError = document.getElementById("emailError");
 const captchaError = document.getElementById("captchaError");
 
+const confirmationPopup = document.querySelector(".booking__popup");
+const confirmationPopupOverlay = document.querySelector(
+  ".booking__popup-overlay"
+);
+const confirmationPopupCloseButton = document.querySelector(
+  ".booking__popup-close"
+);
+
 const botToken = "6942163868:AAGyWH4wTlEure9SzdJxMqCwrhKMJ51fEm0";
 const chatId = "-1002143736013";
 
@@ -139,6 +147,9 @@ bookingForm.addEventListener("submit", (e) => {
     //   .catch((error) => console.error("Error:", error));
     // // Proceed with form submission or further processing
     // console.log("Form is valid. Implement submission or further processing.");
+
+    confirmationPopupOverlay.style.display = "block";
+    confirmationPopup.style.display = "block";
   } else {
     captchaError.style.display = "block";
     captchaInput.classList.add("booking__input_error");
@@ -146,4 +157,10 @@ bookingForm.addEventListener("submit", (e) => {
     generateCaptcha();
     return;
   }
+});
+
+confirmationPopupCloseButton.addEventListener("click", function (event) {
+  confirmationPopupOverlay.style.display = "none";
+  confirmationPopup.style.display = "none";
+  document.location.href = "/";
 });
