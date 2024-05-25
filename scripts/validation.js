@@ -88,7 +88,7 @@ bookingForm.addEventListener("submit", (e) => {
     ) {
       emailError.style.display = "block";
       emailInput.classList.add("booking__input_error");
-      emailError.innerText = "Email должен содержать символ @";
+      emailError.innerText = "Неверный формат email";
       return;
     } else {
       emailError.style.display = "none";
