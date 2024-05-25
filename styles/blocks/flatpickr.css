@@ -79,14 +79,26 @@
 }
 
 .flatpickr-calendar .calendar-title {
-  text-align: center;
+  text-align: start;
   font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0.01em;
-  padding: 40px 40px 0;
+  padding: 12px 18px 0;
   background-color: var(--light-beige);
+}
+
+.flatpickr-calendar .calendar-close-button {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/close-button.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 16px 18px 0 auto;
+  cursor: pointer;
 }
 
 .flatpickr-months .flatpickr-prev-month,
@@ -150,6 +162,18 @@
 }
 
 @media (max-width: 898px) {
+  .flatpickr-months {
+    padding: 32px 18px 0;
+  }
+
+  .flatpickr-prev-month {
+    margin-left: 18px;
+  }
+
+  .flatpickr-next-month {
+    margin-right: 18px;
+  }
+
   .flatpickr-calendar {
     width: 100% !important;
     position: fixed;

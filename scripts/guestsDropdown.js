@@ -89,3 +89,13 @@ document.addEventListener("click", (event) => {
     guestsOverlay.style.display = "none";
   }
 });
+
+const guestsDropdownCloseBtn = document.querySelector(
+  ".guests-dropdown__close"
+);
+
+guestsDropdownCloseBtn.addEventListener("click", (event) => {
+  dropdown.classList.remove("guests-dropdown_open");
+  bookingGuestsIcon.classList.remove("booking__guests-icon_flipped");
+  guestsOverlay.style.display = "none";
+});

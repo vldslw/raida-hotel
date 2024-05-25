@@ -104,6 +104,26 @@ let select = function () {
       }
     }
   });
+
+  document.addEventListener("click", function (event) {
+    let customSelectCloseBtn = event.target.closest(
+      ".custom-select__dropdown-close"
+    );
+    if (customSelectCloseBtn) {
+      let select = event.target.closest(".custom-select");
+      select.classList.remove("custom-select_active");
+
+      let header = select.querySelector(".custom-select__header");
+      if (header) {
+        header.classList.remove("custom-select__header_active");
+      }
+
+      let icon = select.querySelector(".custom-select__icon");
+      icon.classList.remove("custom-select__icon_flipped");
+
+      overlay.style.display = "none";
+    }
+  });
 };
 
 select();

@@ -71,6 +71,13 @@ function initPickers() {
           title,
           instance.calendarContainer.firstChild
         );
+        var closeButton = document.createElement("div");
+        closeButton.className =
+          "calendar-close-button calendar-close-button_checkin";
+        instance.calendarContainer.insertBefore(
+          closeButton,
+          instance.calendarContainer.firstChild
+        );
       } else {
         return;
       }
@@ -122,10 +129,31 @@ function initPickers() {
           title,
           instance.calendarContainer.firstChild
         );
+        var closeButton = document.createElement("div");
+        closeButton.className =
+          "calendar-close-button calendar-close-button_checkout";
+        instance.calendarContainer.insertBefore(
+          closeButton,
+          instance.calendarContainer.firstChild
+        );
       } else {
         return;
       }
     },
+  });
+
+  let checkinCloseButton = document.querySelector(
+    ".calendar-close-button_checkin"
+  );
+  checkinCloseButton.addEventListener("click", function () {
+    checkinPicker.close();
+  });
+
+  let checkoutCloseButton = document.querySelector(
+    ".calendar-close-button_checkout"
+  );
+  checkoutCloseButton.addEventListener("click", function () {
+    checkoutPicker.close();
   });
 
   function getNightsWord(nights) {
