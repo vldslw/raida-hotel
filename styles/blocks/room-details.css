@@ -355,6 +355,10 @@
 }
 
 @media (max-width: 768px) {
+  .room-details__upper-img {
+    display: none;
+  }
+
   .room-details__upper:hover .room-details__upper-img {
     display: none;
   }
@@ -383,6 +387,7 @@
   .room-details__title {
     grid-column: span 2;
     padding: 48px 20px;
+    margin-left: 0;
   }
 
   .room-details__lower {
