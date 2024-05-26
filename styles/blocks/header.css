@@ -123,13 +123,66 @@
   background-position: center;
 }
 
+.header__ham-menu {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  cursor: pointer;
+  margin: 7px 8px;
+  height: 18px;
+  width: 45px;
+  z-index: 999;
+}
+
+.header__ham-menu span {
+  height: 2px;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease-in-out;
+  z-index: 999;
+}
+.header__ham-menu span:nth-child(1) {
+  top: 5%;
+}
+
+.header__ham-menu span:nth-child(3) {
+  top: 95%;
+}
+
+.header__ham-menu_active {
+  position: fixed;
+}
+
+.header__ham-menu.header__ham-menu_active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  height: 3px;
+  background-color: var(--main-green);
+}
+
+.header__ham-menu.header__ham-menu_active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__ham-menu.header__ham-menu_active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  height: 3px;
+  background-color: var(--main-green);
+}
+
 .header__logo {
   font-family: "Montserrat", system-ui, Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 40px;
   text-transform: uppercase;
-  grid-column: span 4;
+  grid-column: 5 / span 4;
   justify-self: center;
   margin: 2px 0;
 }
@@ -235,6 +288,10 @@
 }
 
 @media (min-width: 1441px) {
+  .header__ham-menu {
+    left: calc((100vw - 1312px) / 2);
+  }
+
   .header_page_rooms {
     background-image: url("../../assets/icons/Waves-bg-header-1800px-480px.svg");
   }
@@ -269,6 +326,11 @@
 }
 
 @media (max-width: 768px) {
+  .header__ham-menu {
+    top: 46px;
+    left: 18px;
+  }
+
   .header_page_rooms {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
@@ -323,5 +385,17 @@
 
   .header__contacts-list {
     margin: 0;
+  }
+
+  .header__ham-menu.header__ham-menu_active span:nth-child(1) {
+    background-color: var(--light-beige);
+  }
+
+  .header__ham-menu.header__ham-menu_active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header__ham-menu.header__ham-menu_active span:nth-child(3) {
+    background-color: var(--light-beige);
   }
 }
