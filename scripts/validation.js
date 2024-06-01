@@ -105,48 +105,42 @@ bookingForm.addEventListener("submit", (e) => {
     }
 
     let roomsText = rooms.join(", ");
-    console.log(
-      `Имя: ${formDataObj.name},
-      Телефон: ${formDataObj.phone};
-      Почта: ${formDataObj.email};
-      Cпособ связи: ${formDataObj.method};
-      Дата заезда: ${formDataObj.checkIn};
-      Дата выезда: ${formDataObj.checkOut};
-      Взрослые: ${formDataObj.guestsAdults};
-      Дети: ${formDataObj.guestsChildren};
-      Номера: ${roomsText};
-      Промокод: ${formDataObj.promo};
-      Комментарий: ${formDataObj.comment}
-      `
-    );
-
-    // fetch(
-    //   `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=
-    //   Имя: ${encodeURIComponent(formDataObj.name)};
-    //   Телефон: ${encodeURIComponent(formDataObj.phone)}
-    //   Почта: ${encodeURIComponent(formDataObj.email)};
-    //   Cпособ связи: ${encodeURIComponent(formDataObj.method)};
-    //   Дата заезда: ${encodeURIComponent(formDataObj.checkIn)};
-    //   Дата выезда: ${encodeURIComponent(formDataObj.checkOut)};
-    //   Взрослые: ${encodeURIComponent(formDataObj.guestsAdults)};
-    //   Дети: ${encodeURIComponent(formDataObj.guestsChildren)};
-    //   Номера: ${encodeURIComponent(roomsText)};
-    //   Промокод: ${encodeURIComponent(formDataObj.promo)};
-    //   Комментарий: ${encodeURIComponent(formDataObj.comment)}
+    // console.log(
+    //   `Имя: ${formDataObj.name},
+    //   Телефон: ${formDataObj.phone};
+    //   Почта: ${formDataObj.email};
+    //   Cпособ связи: ${formDataObj.method};
+    //   Дата заезда: ${formDataObj.checkIn};
+    //   Дата выезда: ${formDataObj.checkOut};
+    //   Взрослые: ${formDataObj.guestsAdults};
+    //   Дети: ${formDataObj.guestsChildren};
+    //   Номера: ${roomsText};
+    //   Промокод: ${formDataObj.promo};
+    //   Комментарий: ${formDataObj.comment}
     //   `
-    // )
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.log("Message sent!", data);
-    //     // successMessage.textContent = "Форма успешно отправлена";
-    //     generateCaptcha();
-    //     // userNameInput.value = "";
-    //     // userPhoneInput.value = "";
-    //     // captchaAnswerInput.value = "";
-    //   })
-    //   .catch((error) => console.error("Error:", error));
-    // // Proceed with form submission or further processing
-    // console.log("Form is valid. Implement submission or further processing.");
+    // );
+
+    fetch(
+      `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=
+      Имя: ${encodeURIComponent(formDataObj.name)};
+      Телефон: ${encodeURIComponent(formDataObj.phone)}
+      Почта: ${encodeURIComponent(formDataObj.email)};
+      Cпособ связи: ${encodeURIComponent(formDataObj.method)};
+      Дата заезда: ${encodeURIComponent(formDataObj.checkIn)};
+      Дата выезда: ${encodeURIComponent(formDataObj.checkOut)};
+      Взрослые: ${encodeURIComponent(formDataObj.guestsAdults)};
+      Дети: ${encodeURIComponent(formDataObj.guestsChildren)};
+      Номера: ${encodeURIComponent(roomsText)};
+      Промокод: ${encodeURIComponent(formDataObj.promo)};
+      Комментарий: ${encodeURIComponent(formDataObj.comment)}
+      `
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Message sent!", data);
+        generateCaptcha();
+      })
+      .catch((error) => console.error("Error:", error));
 
     confirmationPopupOverlay.style.display = "block";
     confirmationPopup.style.display = "block";

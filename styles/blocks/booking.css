@@ -376,7 +376,7 @@
   }
 
   .booking__block_captcha {
-    grid-column: 2 / span 1;
+    grid-column: span 3;
   }
 
   .booking__section {
@@ -417,5 +417,22 @@
   .booking__button {
     width: 100%;
     margin: 60px auto 0;
+  }
+
+  .booking__popup {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    z-index: 1000;
+    padding: 32px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .booking__popup-close {
+    margin: 0 0 16px auto;
   }
 }

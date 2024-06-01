@@ -223,6 +223,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .room-details__open-button {
@@ -449,5 +450,11 @@
     width: 60px;
     height: 60px;
     background-color: var(--main-green);
+  }
+}
+
+@media (max-width: 400px) {
+  .room-details__subtitle {
+    margin: 0;
   }
 }
