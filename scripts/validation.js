@@ -119,6 +119,7 @@ bookingForm.addEventListener("submit", (e) => {
     //   Комментарий: ${formDataObj.comment}
     //   `
     // );
+    // test
 
     fetch(
       `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=
